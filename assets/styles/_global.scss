@@ -1,0 +1,33 @@
+html {
+  overflow-y: auto;
+  &.dark {
+    color-scheme: dark;
+  }
+}
+
+.v-card--variant-elevated:not(.v-card--flat) {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.v-theme--light {
+  &.v-icon--clickable,
+  &.v-btn--icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  --v-border-opacity: 0.09 !important;
+  --v-theme-background: 243, 243, 243 !important;
+}
+
+.v-app-bar,
+.v-navigation-drawer,
+.v-footer {
+  background-color: rgb(var(--v-theme-background)) !important;
+}
+
+.v-overlay__content > .v-card {
+  overflow-y: overlay !important;
+}
+
+.v-btn {
+  text-transform: initial;
+}
