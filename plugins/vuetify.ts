@@ -26,21 +26,18 @@ const custom: IconSet = {
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('vuetify:configuration', ({ vuetifyOptions }) => {
+    const theme = {
+      primary: useLocalStorage('theme-primary', '#1697f6').value,
+      secondary: '#03A9F4',
+      accent: '#9C27b0',
+      info: '#00CAE3',
+    }
     vuetifyOptions.icons = {
       defaultSet: 'mdi',
       aliases,
       sets: { mdi, custom },
     }
-  })
-  const theme = {
-    primary: useLocalStorage('theme-primary', '#1697f6').value,
-    secondary: '#03A9F4',
-    accent: '#9C27b0',
-    info: '#00CAE3',
-  }
-  nuxtApp.hook('vuetify:before-create', ({ vuetifyOptions }) => {
     vuetifyOptions.theme = {
-      defaultTheme: useDark().value ? 'dark' : 'light',
       themes: {
         light: {
           colors: theme,
@@ -51,6 +48,21 @@ export default defineNuxtPlugin((nuxtApp) => {
       },
     }
   })
+  // nuxtApp.hook('vuetify:before-create', ({ vuetifyOptions }) => {
+  //   vuetifyOptions.theme = {
+  //     // defaultTheme: useDark().value ? 'dark' : 'light',
+  //   }
+  // })
+  nuxtApp.hook(
+    'vuetify:ssr-client-hints',
+    ({ vuetifyOptions, ssrClientHints }) => {
+      // https://github.com/userquin/vuetify-nuxt-module/issues/130
+      const hints: typeof ssrClientHints = (ssrClientHints as any)
+        .ssrClientHints
+      // if (vuetifyOptions.theme)
+      //   vuetifyOptions.theme.defaultTheme = hints.prefersColorScheme
+    },
+  )
 })
 
 type UnwrapReadonlyArrayType<A> = A extends Readonly<Array<infer I>>

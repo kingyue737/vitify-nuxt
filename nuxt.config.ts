@@ -17,6 +17,16 @@ Object.keys(mdicons).forEach((key) => {
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@pinia/nuxt', '@vueuse/nuxt', 'vuetify-nuxt-module'],
+  css: ['~/assets/styles/index.scss'],
+  vuetify: {
+    moduleOptions: {
+      ssrClientHints: {
+        viewportSize: true,
+        prefersColorScheme: true,
+        reloadOnFirstRequest: true,
+      },
+    },
+  },
   vite: {
     plugins: [
       Modify({

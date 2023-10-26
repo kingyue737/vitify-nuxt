@@ -22,7 +22,7 @@ export default defineVuetifyConfiguration({
       flat: true,
       border: true,
     },
-    VBtn: { color: undefined },
+    VBtn: { color: '' },
     VNavigationDrawer: {
       VList: {
         nav: true,
@@ -32,6 +32,24 @@ export default defineVuetifyConfiguration({
       },
     },
     VChip: { rounded: 'lg' },
+    VSelect: {
+      color: 'primary',
+    },
+    VTextarea: {
+      color: 'primary',
+    },
+    VTextField: {
+      color: 'primary',
+    },
+    VCheckbox: {
+      color: 'primary',
+    },
+    VCheckboxBtn: {
+      color: 'primary',
+    },
+    VProgressLinear: {
+      color: 'primary',
+    },
   },
   display: {
     mobileBreakpoint: 'sm',

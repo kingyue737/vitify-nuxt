@@ -15,13 +15,14 @@ useTitle(title)
 </script>
 
 <template>
-  <v-app>
+  <v-app :theme="theme.current.value.dark ? 'dark' : 'light'">
     <AppDrawer />
     <AppBar />
     <v-main>
       <NuxtPage />
     </v-main>
     <AppFooter />
+    <div id="teleported"></div>
   </v-app>
 </template>
 

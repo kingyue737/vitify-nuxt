@@ -40,7 +40,7 @@ function toggleAll() {
     </template>
     <span>通知</span>
   </v-tooltip>
-  <teleport to="#app">
+  <teleport to="#teleported">
     <v-card
       elevation="6"
       width="400"

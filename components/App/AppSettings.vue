@@ -66,6 +66,7 @@ const toggleDark = useToggle(isDark)
           v-model="color"
           show-swatches
           elevation="0"
+          width="288"
           mode="rgb"
           :modes="['rgb', 'hex', 'hsl']"
           :swatches="colors"
@@ -85,7 +86,7 @@ const toggleDark = useToggle(isDark)
           hide-details
           append-icon="$menu"
         />
-        <v-card :disabled="!drawerImageShow" flat>
+        <v-card :disabled="!drawerImageShow" flat :border="false">
           <v-item-group
             v-model="drawerImage"
             class="d-flex justify-space-between mb-3"
