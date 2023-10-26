@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import type { DataTableHeader } from '~/plugins/vuetify'
 definePageMeta({
-  meta: {
-    icon: 'mdi-flask',
-    title: 'Labs',
-    drawerIndex: 3,
-  },
+  icon: 'mdi-flask',
+  title: 'Labs',
+  drawerIndex: 3,
 })
 const headers: DataTableHeader[] = [
   {

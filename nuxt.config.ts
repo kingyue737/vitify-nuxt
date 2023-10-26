@@ -18,6 +18,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@pinia/nuxt', '@vueuse/nuxt', 'vuetify-nuxt-module'],
   css: ['~/assets/styles/index.scss'],
+  experimental: { typedPages: true },
   vuetify: {
     moduleOptions: {
       ssrClientHints: {

@@ -7,11 +7,9 @@ function warning() {
   Notify.warning(`How dare you refuse me, ${name.value}.`)
 }
 definePageMeta({
-  meta: {
-    icon: 'mdi-home',
-    title: 'Homepage',
-    drawerIndex: 0,
-  },
+  icon: 'mdi-home',
+  title: 'Homepage',
+  drawerIndex: 0,
 })
 </script>
 

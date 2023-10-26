@@ -1,11 +1,9 @@
 <script setup lang="ts">
 definePageMeta({
-  meta: {
-    title: 'Nested Routes',
-    icon: 'mdi-view-list',
-    drawerIndex: 2,
-    breadcrumb: 'disabled',
-  },
+  title: 'Nested Routes',
+  icon: 'mdi-view-list',
+  drawerIndex: 2,
+  breadcrumb: 'disabled',
 })
 </script>
 <template>

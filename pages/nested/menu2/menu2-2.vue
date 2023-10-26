@@ -1,9 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
-  meta: {
-    title: 'Menu 2-2',
-    icon: 'mdi-animation',
-  },
+  title: 'Menu 2-2',
+  icon: 'mdi-animation',
 })
 </script>
 <template>

@@ -1,7 +1,6 @@
 <script setup lang="ts">
-// import { routes } from 'vue-router/auto/routes'
 const router = useRouter()
-const routes = router.getRoutes()
+const routes = router.getRoutes().filter((r) => r.path.lastIndexOf('/') === 0)
 const appStore = useAppStore()
 const {
   drawer: drawerStored,

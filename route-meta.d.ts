@@ -9,3 +9,11 @@ declare module 'vue-router' {
     drawerIndex?: number
   }
 }
+
+declare module '#app' {
+  interface PageMeta {
+    icon?: string
+    title?: string
+    drawerIndex?: number
+  }
+}

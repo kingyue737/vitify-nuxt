@@ -1,10 +1,8 @@
 <script setup lang="ts">
 definePageMeta({
-  meta: {
-    icon: 'mdi-monitor-dashboard',
-    title: 'Dashboard',
-    drawerIndex: 1,
-  },
+  icon: 'mdi-monitor-dashboard',
+  title: 'Dashboard',
+  drawerIndex: 1,
 })
 const stats = ref([
   {
