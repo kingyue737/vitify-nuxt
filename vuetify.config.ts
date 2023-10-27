@@ -1,5 +1,4 @@
 import { defineVuetifyConfiguration } from 'vuetify-nuxt-module/custom-configuration'
-import { en, zhHans } from 'vuetify/locale'
 import { md3 } from 'vuetify/blueprints'
 
 export default defineVuetifyConfiguration({
@@ -8,8 +7,8 @@ export default defineVuetifyConfiguration({
   locale: {
     locale: 'zhHans',
     fallback: 'en',
-    messages: { zhHans, en },
   },
+  localeMessages: ['zhHans', 'en'],
   defaults: {
     VSwitch: {
       color: 'primary',
