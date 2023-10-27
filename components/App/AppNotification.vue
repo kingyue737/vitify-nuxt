@@ -23,6 +23,9 @@ function toggleAll() {
     timeout.value = 5000
   }
 }
+// https://vuejs.org/guide/scaling-up/ssr.html#teleports
+const mounted = ref(false)
+onMounted(() => (mounted.value = true))
 </script>
 
 <template>
@@ -40,7 +43,7 @@ function toggleAll() {
     </template>
     <span>通知</span>
   </v-tooltip>
-  <teleport to="#teleported">
+  <teleport v-if="mounted" to="#teleported">
     <v-card
       elevation="6"
       width="400"
