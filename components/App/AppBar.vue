@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { drawer } = storeToRefs(useAppStore())
+const drawer = useState('drawer')
 const route = useRoute()
 const breadcrumbs = computed(() => {
   return route!.matched

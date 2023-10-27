@@ -1,23 +1,22 @@
 <script setup lang="ts">
 const router = useRouter()
 const routes = router.getRoutes().filter((r) => r.path.lastIndexOf('/') === 0)
-const appStore = useAppStore()
-const { drawer: drawerStored } = storeToRefs(appStore)
+const drawerState = useState('drawer', () => true)
 
 const { mobile, lgAndUp, width } = useDisplay()
 const drawer = computed({
   get() {
-    return drawerStored.value || !mobile.value
+    return drawerState.value || !mobile.value
   },
   set(val: boolean) {
-    drawerStored.value = val
+    drawerState.value = val
   },
 })
-const rail = computed(() => !drawerStored.value && !mobile.value)
+const rail = computed(() => !drawerState.value && !mobile.value)
 routes.sort((a, b) => (a.meta?.drawerIndex ?? 99) - (b.meta?.drawerIndex ?? 98))
 
 nextTick(() => {
-  drawerStored.value = lgAndUp.value && width.value !== 1280
+  drawerState.value = lgAndUp.value && width.value !== 1280
 })
 </script>
 
