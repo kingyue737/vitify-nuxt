@@ -31,3 +31,25 @@ html {
 .v-btn {
   text-transform: initial;
 }
+
+// adjust select input postion and height
+.v-data-table-footer {
+  .v-field__input {
+    min-height: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .v-select__selection {
+    margin-bottom: 2px;
+  }
+}
+
+.v-tab {
+  border-radius: 0 !important;
+}
+
+.v-field--active {
+  .v-icon {
+    color: rgb(var(--v-theme-primary));
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <v-footer app border>
+  <v-footer app>
     <v-spacer />
     <v-defaults-provider
       :defaults="{ VBtn: { variant: 'text', size: 'x-small' } }"
@@ -11,7 +11,6 @@
 </template>
 <style scoped lang="scss">
 .v-footer {
-  border-width: 1px 0 0 0;
   padding: 0px 10px;
   :deep(> .v-btn--icon) {
     .v-icon {

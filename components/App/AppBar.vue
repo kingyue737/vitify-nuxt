@@ -18,7 +18,7 @@ const breadcrumbs = computed(() => {
 </script>
 
 <template>
-  <v-app-bar flat border style="border-width: 0 0 1px 0">
+  <v-app-bar flat>
     <v-app-bar-nav-icon @click="drawer = !drawer" />
     <v-breadcrumbs :items="breadcrumbs"> </v-breadcrumbs>
     <v-spacer />
