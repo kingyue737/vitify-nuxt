@@ -18,7 +18,8 @@ useTitle(title)
   <v-app :theme="theme.current.value.dark ? 'dark' : 'light'">
     <AppDrawer />
     <AppBar />
-    <v-main>
+    <!-- https://github.com/vuetifyjs/vuetify/issues/15202 -->
+    <v-main style="--v-layout-top: 64px; --v-layout-bottom: 32px">
       <NuxtPage />
     </v-main>
     <AppFooter />

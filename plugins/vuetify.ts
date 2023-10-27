@@ -26,25 +26,16 @@ const custom: IconSet = {
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('vuetify:configuration', ({ vuetifyOptions }) => {
-    const theme = {
-      primary: useLocalStorage('theme-primary', '#1697f6').value,
-      secondary: '#03A9F4',
-      accent: '#9C27b0',
-      info: '#00CAE3',
-    }
     vuetifyOptions.icons = {
       defaultSet: 'mdi',
       aliases,
       sets: { mdi, custom },
     }
+    const primary = useLocalStorage('theme-primary', '#1697f6').value
     vuetifyOptions.theme = {
       themes: {
-        light: {
-          colors: theme,
-        },
-        dark: {
-          colors: theme,
-        },
+        light: { colors: { primary } },
+        dark: { colors: { primary } },
       },
     }
   })

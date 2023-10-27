@@ -3,7 +3,6 @@ const { drawer } = storeToRefs(useAppStore())
 const route = useRoute()
 const breadcrumbs = computed(() => {
   return route!.matched
-    .slice(1)
     .filter(
       (item) =>
         item.meta && item.meta.title && !(item.meta?.breadcrumb === 'hidden'),

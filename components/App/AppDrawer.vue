@@ -2,11 +2,7 @@
 const router = useRouter()
 const routes = router.getRoutes().filter((r) => r.path.lastIndexOf('/') === 0)
 const appStore = useAppStore()
-const {
-  drawer: drawerStored,
-  drawerImage,
-  drawerImageShow,
-} = storeToRefs(appStore)
+const { drawer: drawerStored } = storeToRefs(appStore)
 
 const { mobile, lgAndUp, width } = useDisplay()
 const drawer = computed({
@@ -18,11 +14,6 @@ const drawer = computed({
   },
 })
 const rail = computed(() => !drawerStored.value && !mobile.value)
-const gradient = computed(() =>
-  useTheme().current.value.dark
-    ? 'to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7)'
-    : 'to bottom, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, .8) 80%, rgba(255, 255, 255, 1) 100%',
-)
 routes.sort((a, b) => (a.meta?.drawerIndex ?? 99) - (b.meta?.drawerIndex ?? 98))
 
 nextTick(() => {
@@ -31,21 +22,7 @@ nextTick(() => {
 </script>
 
 <template>
-  <v-navigation-drawer
-    v-model="drawer"
-    :expand-on-hover="rail"
-    :image="drawerImage"
-    :rail="rail"
-  >
-    <template #image="{ image }">
-      <v-img
-        v-show="drawerImageShow"
-        cover
-        :gradient="gradient"
-        :src="image"
-        height="100%"
-      />
-    </template>
+  <v-navigation-drawer v-model="drawer" :expand-on-hover="rail" :rail="rail">
     <template #prepend>
       <v-list dense nav>
         <v-list-item class="pa-1">
@@ -65,7 +42,6 @@ nextTick(() => {
           </v-list-item-title>
         </v-list-item>
       </v-list>
-      <v-divider />
     </template>
     <v-list nav density="compact">
       <AppDrawerItem v-for="route in routes" :key="route.name" :item="route" />
@@ -152,9 +128,6 @@ nextTick(() => {
   }
   .v-list-item {
     transition: all 0.2s;
-  }
-  .v-img__img--contain {
-    object-fit: none;
   }
 }
 </style>

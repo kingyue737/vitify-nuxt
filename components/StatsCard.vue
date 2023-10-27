@@ -54,7 +54,6 @@ withDefaults(
 
 <style lang="scss" scoped>
 .stats-card {
-  --v-border-opacity: 0.7;
   padding: 5px;
   padding-top: 10px;
   .card-title {

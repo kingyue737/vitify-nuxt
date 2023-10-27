@@ -67,7 +67,7 @@ const option: ECOption = {
     trigger: 'axis',
   },
   grid: {
-    top: 10,
+    top: 20,
     left: '2%',
     right: '2%',
     bottom: '3%',

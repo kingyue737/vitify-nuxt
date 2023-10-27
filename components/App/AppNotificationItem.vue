@@ -37,6 +37,7 @@ if (isActive.value) {
     :border="variant ? 'start' : false"
     :variant="variant ? 'outlined' : undefined"
     :density="variant ? 'compact' : undefined"
+    :theme="variant ? undefined : 'dark'"
     :elevation="variant ? 0 : 3"
     :type="notification.type"
     :text="notification.text"
