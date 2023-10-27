@@ -8,6 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "typecheck": "nuxi typecheck",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "vite-svg-loader": "^4.0.0",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.22",
     "vuetify-nuxt-module": "^0.6.0"
   },
   "dependencies": {

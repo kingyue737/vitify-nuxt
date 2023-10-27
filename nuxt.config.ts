@@ -19,11 +19,13 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt', '@vueuse/nuxt', 'vuetify-nuxt-module'],
   css: ['~/assets/styles/index.scss'],
   experimental: { typedPages: true },
+  typescript: { shim: false, strict: true },
   vuetify: {
     moduleOptions: {
       ssrClientHints: {
         viewportSize: true,
         prefersColorScheme: true,
+        prefersColorSchemeOptions: {},
         reloadOnFirstRequest: true,
       },
     },
@@ -37,6 +39,7 @@ export default defineNuxtConfig({
           if (mdi[match]) {
             return mdi[match]
           } else {
+            // eslint-disable-next-line no-console
             console.warn('[plugin-modify] No matched svg icon for ' + match)
             return match
           }
