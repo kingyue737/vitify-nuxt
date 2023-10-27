@@ -19,11 +19,11 @@
     "eslint-plugin-prettier": "^5.0.1",
     "nuxt": "^3.8.0",
     "prettier": "^3.0.3",
-    "sass": "^1.69.4",
+    "sass": "^1.69.5",
     "vite-svg-loader": "^4.0.0",
-    "vue": "^3.3.6",
+    "vue": "^3.3.7",
     "vue-router": "^4.2.5",
-    "vuetify-nuxt-module": "^0.5.16"
+    "vuetify-nuxt-module": "^0.6.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",

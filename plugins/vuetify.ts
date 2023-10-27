@@ -53,16 +53,11 @@ export default defineNuxtPlugin((nuxtApp) => {
   //     // defaultTheme: useDark().value ? 'dark' : 'light',
   //   }
   // })
-  nuxtApp.hook(
-    'vuetify:ssr-client-hints',
-    ({ vuetifyOptions, ssrClientHints }) => {
-      // https://github.com/userquin/vuetify-nuxt-module/issues/130
-      const hints: typeof ssrClientHints = (ssrClientHints as any)
-        .ssrClientHints
-      // if (vuetifyOptions.theme)
-      //   vuetifyOptions.theme.defaultTheme = hints.prefersColorScheme
-    },
-  )
+  // nuxtApp.hook(
+  //   'vuetify:ssr-client-hints',
+  //   ({ vuetifyOptions, ssrClientHints }) => {
+  //   },
+  // )
 })
 
 type UnwrapReadonlyArrayType<A> = A extends Readonly<Array<infer I>>
