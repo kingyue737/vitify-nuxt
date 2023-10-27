@@ -54,4 +54,11 @@ export default defineVuetifyConfiguration({
   display: {
     mobileBreakpoint: 'sm',
   },
+  theme: {
+    defaultTheme: 'light',
+    themes: {
+      light: { colors: {} },
+      dark: { colors: {} },
+    },
+  },
 })

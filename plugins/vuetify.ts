@@ -39,16 +39,6 @@ export default defineNuxtPlugin((nuxtApp) => {
       },
     }
   })
-  // nuxtApp.hook('vuetify:before-create', ({ vuetifyOptions }) => {
-  //   vuetifyOptions.theme = {
-  //     // defaultTheme: useDark().value ? 'dark' : 'light',
-  //   }
-  // })
-  // nuxtApp.hook(
-  //   'vuetify:ssr-client-hints',
-  //   ({ vuetifyOptions, ssrClientHints }) => {
-  //   },
-  // )
 })
 
 type UnwrapReadonlyArrayType<A> = A extends Readonly<Array<infer I>>
