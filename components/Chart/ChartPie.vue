@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ECOption } from '@/plugins/echarts'
+import type { ECOption } from '~/plugins/echarts'
 const option: ECOption = {
   backgroundColor: 'transparent',
   tooltip: {

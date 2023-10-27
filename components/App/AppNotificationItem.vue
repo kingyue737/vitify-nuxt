@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useVModel } from '@vueuse/core'
-import type { Notification } from '@/stores/notification'
+import type { Notification } from '~/stores/notification'
 
 const props = withDefaults(
   defineProps<{
@@ -22,7 +22,7 @@ const startTimeout = () => {
     return
   }
 
-  activeTimeout = setTimeout(() => {
+  activeTimeout = window.setTimeout(() => {
     isActive.value = false
   }, timeout.value)
 }

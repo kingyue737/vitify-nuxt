@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ECOption } from '@/plugins/echarts'
+import type { ECOption } from '~/plugins/echarts'
 
 const data = [
   ['2022-06-05', 116],
