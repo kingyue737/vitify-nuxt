@@ -9,13 +9,13 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxi typecheck",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "devDependencies": {
     "@kingyue/rollup-plugin-modify": "^4.1.0",
     "@mdi/js": "^7.3.67",
     "@nuxt/devtools": "latest",
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxt/eslint-config": "^0.2.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "nuxt": "^3.8.0",

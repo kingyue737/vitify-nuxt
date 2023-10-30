@@ -18,8 +18,8 @@ export const useNotificationStore = defineStore('notification', {
     addNotification(text: string, type: Notification['type'] = 'info') {
       this.notifications.push({
         id: this.notificationCount++,
-        text: text,
-        type: type,
+        text,
+        type,
         time: new Date(),
         show: true,
       })

@@ -9,5 +9,5 @@
     "prettier/prettier": "warn"
   },
   "plugins": ["prettier"],
-  "extends": ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"]
+  "extends": ["@nuxt/eslint-config", "plugin:prettier/recommended"]
 }
