@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useDark, useToggle } from '@vueuse/core'
 import { mergeProps } from 'vue'
 
 const theme = useTheme()
+const { store } = useColorMode()
 const color = computed({
   get() {
     return theme.themes.value.light.colors.primary
@@ -21,12 +21,6 @@ const colors = [
   ['#002FA7', '#492d22'],
 ]
 const menuShow = ref(false)
-const isDark = useDark({
-  onChanged(dark: boolean) {
-    theme.global.name.value = dark ? 'dark' : 'light'
-  },
-})
-const toggleDark = useToggle(isDark)
 </script>
 
 <template>
@@ -46,12 +40,12 @@ const toggleDark = useToggle(isDark)
           >
           </v-btn>
         </template>
-        <span>界面设置</span>
+        <span>Theme Palette</span>
       </v-tooltip>
     </template>
     <v-card width="320">
       <v-card-text class="text-center">
-        <v-label class="mb-3">主题色</v-label>
+        <v-label class="mb-3">Theme Palette</v-label>
         <v-color-picker
           v-model="color"
           show-swatches
@@ -61,14 +55,13 @@ const toggleDark = useToggle(isDark)
           :modes="['rgb', 'hex', 'hsl']"
           :swatches="colors"
         ></v-color-picker>
-        <v-divider class="my-3" />
-        <v-switch
-          :model-value="isDark"
-          label="黑暗模式"
-          hide-details
-          :append-icon="isDark ? 'mdi-weather-night' : 'mdi-weather-sunny'"
-          @update:model-value="toggleDark"
-        />
+        <v-btn-toggle v-model="store" mandatory class="mt-2" rounded="lg">
+          <v-btn prepend-icon="mdi-white-balance-sunny" value="light"
+            >Light</v-btn
+          >
+          <v-btn prepend-icon="mdi-weather-night" value="dark">Dark</v-btn>
+          <v-btn prepend-icon="mdi-laptop" value="auto">System</v-btn>
+        </v-btn-toggle>
       </v-card-text>
     </v-card>
   </v-menu>
