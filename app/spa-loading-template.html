@@ -1,0 +1,38 @@
+<img
+  class="loader"
+  decoding="sync"
+  importance="high"
+  src="./favicon.svg"
+  alt="loading"
+/>
+
+<style>
+  @media (prefers-color-scheme: dark) {
+    html {
+      background: #121212;
+    }
+  }
+  @keyframes spin-quarter {
+    45% {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+  .loader {
+    position: fixed;
+    display: block;
+    z-index: 1031;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    height: 128px;
+    opacity: 0.8;
+    animation: spin-quarter 1.25s linear infinite forwards;
+  }
+</style>
