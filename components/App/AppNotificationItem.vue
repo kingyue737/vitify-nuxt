@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useVModel } from '@vueuse/core'
 import type { Notification } from '~/stores/notification'
 
 const props = withDefaults(

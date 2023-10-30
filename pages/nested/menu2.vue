@@ -5,5 +5,5 @@ definePageMeta({
 })
 </script>
 <template>
-  <RouterWrapper />
+  <PageWrapper />
 </template>
