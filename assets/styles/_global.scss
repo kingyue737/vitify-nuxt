@@ -53,3 +53,8 @@ html {
     color: rgb(var(--v-theme-primary));
   }
 }
+
+// unknown production fix
+.v-spacer {
+  flex-grow: 1;
+}
