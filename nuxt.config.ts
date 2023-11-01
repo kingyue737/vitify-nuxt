@@ -16,7 +16,7 @@ Object.keys(mdicons).forEach((key) => {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  ssr: false,
+  ssr: false, // you can turn on it!
   modules: ['@pinia/nuxt', '@vueuse/nuxt', 'vuetify-nuxt-module'],
   css: ['~/assets/styles/index.scss'],
   experimental: { typedPages: true },
