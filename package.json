@@ -31,10 +31,5 @@
     "@vueuse/nuxt": "^10.5.0",
     "echarts": "^5.4.3",
     "vue-echarts": "^6.6.1"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "vue-echarts@6.6.1": "patches/vue-echarts@6.6.1.patch"
-    }
   }
 }
