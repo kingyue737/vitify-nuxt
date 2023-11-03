@@ -19,7 +19,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vue-echarts'],
   },
-  ssr: false, // you can turn on it!
+  // you can turn on SSR but Vuetify has a layout bug
+  // https://github.com/vuetifyjs/vuetify/issues/15202
+  ssr: false,
   modules: ['@pinia/nuxt', '@vueuse/nuxt', 'vuetify-nuxt-module'],
   css: ['~/assets/styles/index.scss'],
   experimental: { typedPages: true },

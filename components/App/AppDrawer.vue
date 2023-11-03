@@ -52,14 +52,14 @@ nextTick(() => {
           &copy; Copyright 2023
           <a
             href="https://github.com/kingyue737"
-            class="font-weight-bold"
+            class="font-weight-bold text-primary"
             target="_blank"
             >Yue JIN</a
           >
           <span> & </span>
           <a
             href="https://www.nustarnuclear.com/"
-            class="font-weight-bold"
+            class="font-weight-bold text-primary"
             target="_blank"
             >NuStar</a
           >
