@@ -24,7 +24,7 @@
     "vue": "^3.3.7",
     "vue-router": "^4.2.5",
     "vue-tsc": "^1.8.22",
-    "vuetify-nuxt-module": "^0.6.0"
+    "vuetify-nuxt-module": "^0.6.2"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
