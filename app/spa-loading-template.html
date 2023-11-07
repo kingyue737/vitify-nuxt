@@ -1,38 +1,47 @@
-<img
-  class="loader"
-  decoding="sync"
-  importance="high"
-  src="/favicon.svg"
-  alt="loading"
-/>
+<svg
+  class="nuxt-spa-loading"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 37 37"
+  fill="none"
+  width="80"
+>
+  <g transform="rotate(180 18.778 13.7)">
+    <path
+      d="M24.236 22.006h10.742L25.563 5.822l-8.979 14.31a4 4 0 0 1-3.388 1.874H2.978l16-27.713 6 10.392"
+    />
+  </g>
+</svg>
 
 <style>
+  .nuxt-spa-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nuxt-spa-loading > g > path {
+    fill: none;
+    stroke: #248fe4;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    /* Stroke-dasharray property */
+    stroke-dasharray: 128;
+    stroke-dashoffset: 128;
+    animation: nuxt-spa-loading-move 3s linear infinite;
+    animation-fill-mode: forwards;
+  }
+
   @media (prefers-color-scheme: dark) {
     html {
       background: #121212;
     }
   }
-  @keyframes spin-quarter {
-    45% {
-      transform: translate(-50%, -50%) rotate(90deg);
-    }
+
+  @keyframes nuxt-spa-loading-move {
     100% {
-      transform: translate(-50%, -50%) rotate(90deg);
+      stroke-dashoffset: -128;
     }
-  }
-  .loader {
-    position: fixed;
-    display: block;
-    z-index: 1031;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.5s ease;
-    height: 128px;
-    opacity: 0.8;
-    animation: spin-quarter 1.25s linear infinite forwards;
   }
 </style>

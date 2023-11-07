@@ -15,7 +15,7 @@ definePageMeta({
 
 <template>
   <div class="wrapper">
-    <v-icon icon="custom:vitify" size="3.5em" color="primary" class="mb-4" />
+    <v-icon icon="custom:vitify-nuxt" size="3em" color="primary" class="mb-4" />
     <p>Opinionated Starter Template</p>
     <v-responsive max-width="300" class="mx-auto">
       <v-text-field

@@ -8,10 +8,10 @@ const stats = ref([
   {
     icon: 'mdi-web',
     title: 'Bandwidth',
-    value: 230,
+    value: 23,
     unit: 'GB',
     color: 'primary',
-    caption: 'Up: 100, Down: 130',
+    caption: 'Up: 13, Down: 10',
   },
   {
     icon: 'mdi-rss',

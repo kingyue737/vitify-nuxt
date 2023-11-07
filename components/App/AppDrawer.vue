@@ -27,7 +27,7 @@ nextTick(() => {
         <v-list-item class="pa-1">
           <template #prepend>
             <v-icon
-              icon="custom:vitify"
+              icon="custom:vitify-nuxt"
               size="x-large"
               class="drawer-header-icon"
               color="primary"
@@ -120,6 +120,7 @@ nextTick(() => {
     height: 1.2em !important;
     width: 1.2em !important;
     transition: all 0.2s;
+    margin-right: -10px;
   }
   .v-list-group {
     // --list-indent-size: 10px;

@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Vitify - Opinionated Vuetify Admin Starter Template" src="https://github.com/kingyue737/vitify-admin/raw/main/public/favicon.svg" width=200px/>
+  <img alt="Vitify - Opinionated Vuetify Admin Starter Template" src="public/vitify-nuxt.svg" width=100px/>
 </p>
 <h1 align="center">Vitify Nuxt</h1>
 
