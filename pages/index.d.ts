@@ -1,5 +1,3 @@
-export {}
-
 declare module '#app' {
   interface PageMeta {
     icon?: string
@@ -7,3 +5,5 @@ declare module '#app' {
     drawerIndex?: number
   }
 }
+
+export {}
