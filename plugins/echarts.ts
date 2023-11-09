@@ -1,5 +1,4 @@
-import * as echarts from 'echarts/core'
-import VChart from 'vue-echarts'
+import { use, type ComposeOption } from 'echarts/core'
 
 import {
   LineChart,
@@ -37,7 +36,7 @@ import {
   type VisualMapComponentOption,
 } from 'echarts/components'
 
-echarts.use([
+use([
   LineChart,
   BarChart,
   PieChart,
@@ -56,7 +55,7 @@ echarts.use([
   VisualMapComponent,
 ])
 
-export type ECOption = echarts.ComposeOption<
+export type ECOption = ComposeOption<
   | LineSeriesOption
   | BarSeriesOption
   | PieSeriesOption
@@ -74,6 +73,4 @@ export type ECOption = echarts.ComposeOption<
   | VisualMapComponentOption
 >
 
-export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component('VChart', VChart)
-})
+export default defineNuxtPlugin(() => {})
