@@ -15,7 +15,7 @@ useTitle(title)
 </script>
 
 <template>
-  <v-app :theme="theme.current.value.dark ? 'dark' : 'light'">
+  <v-app>
     <AppDrawer />
     <AppBar />
     <!-- https://github.com/vuetifyjs/vuetify/issues/15202 -->
