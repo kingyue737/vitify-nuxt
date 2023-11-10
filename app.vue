@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { THEME_KEY } from 'vue-echarts'
-import { useTitle } from '@vueuse/core'
+
 const theme = useTheme()
 provide(
   THEME_KEY,
@@ -8,10 +8,12 @@ provide(
 )
 const route = useRoute()
 const title = computed(() => {
-  const title = route.meta?.title || route.matched[0].meta?.title || ''
-  return title ? `${title} | Vitify Admin` : 'Vitify Admin'
+  return route.meta?.title || route.matched[0].meta?.title || ''
 })
-useTitle(title)
+useHead({
+  title,
+  titleTemplate: (t) => (t ? `${t} | Vitify Admin` : 'Vitify Admin'),
+})
 </script>
 
 <template>
