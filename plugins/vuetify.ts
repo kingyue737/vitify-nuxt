@@ -1,7 +1,6 @@
 import type { FunctionalComponent } from 'vue'
 import { type IconSet, type IconProps } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
-import { type VDataTable } from 'vuetify/labs/VDataTable'
 
 function filename(path: string) {
   return path
@@ -40,9 +39,3 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
   })
 })
-
-type UnwrapReadonlyArrayType<A> = A extends Readonly<Array<infer I>>
-  ? UnwrapReadonlyArrayType<I>
-  : A
-type DT = InstanceType<typeof VDataTable>
-export type DataTableHeader = UnwrapReadonlyArrayType<DT['headers']>
