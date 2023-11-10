@@ -53,8 +53,3 @@ html {
     color: rgb(var(--v-theme-primary));
   }
 }
-
-// https://github.com/vuetifyjs/vuetify/issues/18604
-.v-spacer {
-  flex-grow: 1;
-}
