@@ -94,7 +94,7 @@ function toggleAll() {
   </teleport>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .notification-item {
   width: 100%;
   border: 0;

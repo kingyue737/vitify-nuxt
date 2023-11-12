@@ -66,19 +66,3 @@ const menuShow = ref(false)
     </v-card>
   </v-menu>
 </template>
-
-<style lang="scss" scoped>
-.bg-sheet {
-  cursor: pointer;
-  overflow: hidden;
-  border-width: 3px;
-  border-style: solid;
-  border-color: transparent;
-  &:hover {
-    border-color: rgb(var(--v-theme-primary), 0.6);
-  }
-  &--active {
-    border-color: rgb(var(--v-theme-primary));
-  }
-}
-</style>

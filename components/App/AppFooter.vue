@@ -9,10 +9,10 @@
     </v-defaults-provider>
   </v-footer>
 </template>
-<style scoped lang="scss">
+<style>
 .v-footer {
-  padding: 0px 10px;
-  :deep(> .v-btn--icon) {
+  padding: 0px 10px !important;
+  > .v-btn--icon {
     .v-icon {
       height: 1.25em;
       width: 1.25em;

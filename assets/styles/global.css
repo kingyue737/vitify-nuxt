@@ -32,7 +32,6 @@ html {
   text-transform: initial !important;
 }
 
-// adjust select input postion and height
 .v-data-table-footer {
   .v-field__input {
     min-height: 36px;

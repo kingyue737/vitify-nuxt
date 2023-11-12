@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   // https://github.com/vuetifyjs/vuetify/issues/15202
   ssr: false,
   modules: ['@pinia/nuxt', '@vueuse/nuxt', 'vuetify-nuxt-module'],
-  css: ['~/assets/styles/index.scss'],
+  css: ['~/assets/styles/index.css'],
   experimental: { typedPages: true },
   typescript: { shim: false, strict: true },
   vuetify: {

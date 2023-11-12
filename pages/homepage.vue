@@ -33,7 +33,7 @@ definePageMeta({
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .wrapper {
   position: relative;
   top: calc(50vh - 330px);

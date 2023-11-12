@@ -52,7 +52,7 @@ withDefaults(
   </v-card>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .stats-card {
   padding: 5px;
   padding-top: 10px;

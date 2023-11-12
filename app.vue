@@ -29,7 +29,7 @@ useHead({
   </v-app>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .v-main {
   padding-top: 0;
   margin-top: var(--v-layout-top);
