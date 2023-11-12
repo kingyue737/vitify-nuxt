@@ -1,4 +1,3 @@
-import SvgLoader from 'vite-svg-loader'
 import Modify from '@kingyue/rollup-plugin-modify'
 import * as mdicons from '@mdi/js'
 
@@ -51,24 +50,6 @@ export default defineNuxtConfig({
           }
         },
         sourcemap: false,
-      }),
-      SvgLoader({
-        svgoConfig: {
-          plugins: [
-            'cleanupEnableBackground',
-            'removeDoctype',
-            'removeMetadata',
-            'removeComments',
-            'removeXMLNS',
-            'removeXMLProcInst',
-            'sortDefsChildren',
-            'convertTransform',
-            {
-              name: 'addClassesToSVGElement',
-              params: { className: 'v-icon__svg' },
-            },
-          ],
-        },
       }),
     ],
   },

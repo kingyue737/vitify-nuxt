@@ -73,7 +73,6 @@
 
 ### Plugins
 
-- [`vite-svg-loader`](https://github.com/jpkleemans/vite-svg-loader) - SVG files are loaded as Vue components, optimised via [SVGO](https://github.com/svg/svgo) and auto registered as Vuetify `v-icon`s
 - [`rollup-plugin-modify`](https://github.com/kingyue737/rollup-plugin-modify) - auto replace [`@mdi/font`](https://github.com/Templarian/MaterialDesign-Webfont) with [`@mdi/js`](https://github.com/Templarian/MaterialDesign-JS) in `<VIcon>`, signicantly reduce bundle size
 
 ### Coding Style

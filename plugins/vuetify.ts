@@ -1,4 +1,3 @@
-import type { FunctionalComponent } from 'vue'
 import { type IconSet, type IconProps } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
 
@@ -11,16 +10,15 @@ function filename(path: string) {
 
 const svgIcons = Object.fromEntries(
   Object.entries(
-    import.meta.glob<FunctionalComponent>('~/assets/icons/*.svg', {
+    import.meta.glob('~/assets/icons/*.svg', {
       eager: true,
-      import: 'default',
-      as: 'component',
+      as: 'raw',
     }),
   ).map(([k, v]) => [filename(k), v]),
 )
 const custom: IconSet = {
   component: (props: IconProps) =>
-    h(props.tag, [h(svgIcons[props.icon as string])]),
+    h(props.tag, { innerHTML: svgIcons[props.icon as string] }),
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
