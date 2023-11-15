@@ -25,7 +25,6 @@ useHead({
       <NuxtPage />
     </v-main>
     <AppFooter />
-    <div id="teleported"></div>
   </v-app>
 </template>
 

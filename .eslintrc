@@ -6,6 +6,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
+    "vue/valid-v-slot": "off",
     "prettier/prettier": "warn"
   },
   "plugins": ["prettier"],
