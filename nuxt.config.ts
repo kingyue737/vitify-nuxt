@@ -20,8 +20,13 @@ export default defineNuxtConfig({
   },
   // you can turn on SSR but Vuetify has a layout bug
   // https://github.com/vuetifyjs/vuetify/issues/15202
-  ssr: false,
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'vuetify-nuxt-module'],
+  ssr: true,
+  modules: [
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    'vuetify-nuxt-module',
+    'nuxt-auth-utils',
+  ],
   css: ['~/assets/styles/index.css'],
   experimental: { typedPages: true },
   typescript: { shim: false, strict: true },
@@ -52,5 +57,15 @@ export default defineNuxtConfig({
         sourcemap: false,
       }),
     ],
+  },
+  runtimeConfig: {
+    github: {
+      clientId: '',
+      clientSecret: '',
+    },
+    session: {
+      name: 'nuxt-session',
+      password: '',
+    },
   },
 })

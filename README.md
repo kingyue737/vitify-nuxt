@@ -70,6 +70,7 @@
 - [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs
 - [Pinia](https://github.com/vuejs/pinia) - intuitive, type safe, light and flexible Store for Vue
 - [DevTools](https://github.com/nuxt/devtools) - unleash Nuxt Developer Experience
+- [Nuxt Auth Utils](https://github.com/Atinux/nuxt-auth-utils) - Minimalist Authentication module for Nuxt
 
 ### Plugins
 
@@ -107,3 +108,37 @@ npx degit kingyue737/vitify-nuxt my-vitify-app
 cd my-vitify-app
 pnpm i
 ```
+
+### Authentication Setup
+
+> You can switch to any [OAuth Providers](https://github.com/Atinux/nuxt-auth-utils#supported-oauth-providers) supported by [Nuxt Auth Utils](https://github.com/Atinux/nuxt-auth-utils).
+
+Create a [GitHub OAuth Application](https://github.com/settings/applications/new) with:
+
+- Homepage url: `http://localhost:3000`
+- Callback url: `http://localhost:3000/api/auth/github`
+
+Add the variables in the `.env` file:
+
+```bash
+NUXT_OAUTH_GITHUB_CLIENT_ID="my-github-oauth-app-id"
+NUXT_OAUTH_GITHUB_CLIENT_SECRET="my-github-oauth-app-secret"
+```
+
+To create sealed sessions, you also need to add `NUXT_SESSION_SECRET` in the `.env` with at least 32 characters:
+
+```bash
+NUXT_SESSION_SECRET=your-super-long-secret-for-session-encryption
+```
+
+### Development
+
+Start the development server on http://localhost:3000
+
+```bash
+pnpm run dev
+```
+
+## License
+
+[MIT License](./LICENSE)
