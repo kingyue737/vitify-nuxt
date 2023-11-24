@@ -47,6 +47,10 @@ html {
   border-radius: 0 !important;
 }
 
+.v-breadcrumbs-divider {
+  opacity: 0.5;
+}
+
 .v-field--active {
   .v-icon {
     color: rgb(var(--v-theme-primary));
@@ -57,4 +61,11 @@ html {
   fill: currentColor;
   width: 100%;
   height: 100%;
+}
+
+/* https://github.com/vuetifyjs/vuetify/issues/15202 */
+.v-app-bar,
+.v-footer {
+  left: 256px;
+  width: calc(100% - 256px);
 }

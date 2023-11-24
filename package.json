@@ -28,6 +28,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/nuxt": "^10.6.1",
     "echarts": "^5.4.3",
+    "nuxt-auth-utils": "^0.0.8",
     "vue-echarts": "^6.6.1"
   }
 }

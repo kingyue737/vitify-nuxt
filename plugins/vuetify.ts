@@ -1,5 +1,7 @@
 import { type IconSet, type IconProps } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
+import type { VDataTable } from 'vuetify/lib/components/index.mjs'
+export type DataTableHeaders = InstanceType<typeof VDataTable>['headers']
 
 function filename(path: string) {
   return path

@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import type { DataTableHeaders } from '~/plugins/vuetify'
+
 definePageMeta({
   icon: 'mdi-flask',
   title: 'Labs',
   drawerIndex: 3,
 })
 
-const headers = [
+const headers: DataTableHeaders = [
   {
     title: 'Dessert (100g serving)',
     key: 'name',
