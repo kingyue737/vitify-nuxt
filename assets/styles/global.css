@@ -69,3 +69,6 @@ html {
   left: 256px;
   width: calc(100% - 256px);
 }
+.v-navigation-drawer {
+  width: 256px;
+}
