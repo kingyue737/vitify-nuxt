@@ -32,19 +32,21 @@ const { loggedIn, clear, user } = useUserSession()
     <v-breadcrumbs :items="breadcrumbs"> </v-breadcrumbs>
     <v-spacer />
     <div id="app-bar"></div>
-    <div>
-      <v-switch
-        :model-value="isDark"
-        color=""
-        hide-details
-        density="compact"
-        inset
-        false-icon="mdi-white-balance-sunny"
-        true-icon="mdi-weather-night"
-        style="opacity: 0.8"
-        @update:model-value="toggleDark"
-      ></v-switch>
-    </div>
+    <client-only>
+      <div>
+        <v-switch
+          :model-value="isDark"
+          color=""
+          hide-details
+          density="compact"
+          inset
+          false-icon="mdi-white-balance-sunny"
+          true-icon="mdi-weather-night"
+          style="opacity: 0.8"
+          @update:model-value="toggleDark"
+        ></v-switch>
+      </div>
+    </client-only>
     <v-btn
       icon
       href="https://github.com/kingyue737/vitify-nuxt"
