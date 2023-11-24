@@ -27,7 +27,7 @@
 
 - 💚 [Nuxt 3](https://nuxt.com/) - SPA, ESR, File-based routing, components auto importing, modules, etc
 
-- 💥 SSR out of box - powered by [Vuetify Nuxt module](https://github.com/userquin/vuetify-nuxt-module)
+- 💥 SSR out of the box - powered by [Vuetify Nuxt module](https://github.com/userquin/vuetify-nuxt-module)
 
 - ⚡️ [Vite 4](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
@@ -45,7 +45,7 @@
 
 - 🪟 Default layout with drawer, header and footer
 
-- 🧭 Auto generated navigation drawer and breadcrumbs based on routes
+- 🧭 Auto-generated navigation drawer and breadcrumbs based on routes
 
 - 🔔 Notification store
 
@@ -54,6 +54,8 @@
 - 🎨 Theme color customization and dark mode
 
 - 📱 Responsive layout
+
+- 🛡️ Authentication backed-in using [nuxt-auth-utils](https://github.com/Atinux/nuxt-auth-utils)
 
 ## Variants
 
@@ -68,13 +70,13 @@
 
 - [Vuetify Nuxt Module](https://github.com/userquin/vuetify-nuxt-module) - Zero-config Nuxt Module for Vuetify
 - [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs
-- [Pinia](https://github.com/vuejs/pinia) - intuitive, type safe, light and flexible Store for Vue
+- [Pinia](https://github.com/vuejs/pinia) - intuitive, type-safe, light and flexible Store for Vue
 - [DevTools](https://github.com/nuxt/devtools) - unleash Nuxt Developer Experience
 - [Nuxt Auth Utils](https://github.com/Atinux/nuxt-auth-utils) - Minimalist Authentication module for Nuxt
 
 ### Plugins
 
-- [`rollup-plugin-modify`](https://github.com/kingyue737/rollup-plugin-modify) - auto replace [`@mdi/font`](https://github.com/Templarian/MaterialDesign-Webfont) with [`@mdi/js`](https://github.com/Templarian/MaterialDesign-JS) in `<VIcon>`, signicantly reduce bundle size
+- [`rollup-plugin-modify`](https://github.com/kingyue737/rollup-plugin-modify) - auto replace [`@mdi/font`](https://github.com/Templarian/MaterialDesign-Webfont) with [`@mdi/js`](https://github.com/Templarian/MaterialDesign-JS) in `<VIcon>`, significantly reduce bundle size
 
 ### Coding Style
 
