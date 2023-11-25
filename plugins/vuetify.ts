@@ -1,5 +1,4 @@
 import { type IconSet, type IconProps } from 'vuetify'
-import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
 import type { VDataTable } from 'vuetify/lib/components/index.mjs'
 export type DataTableHeaders = InstanceType<typeof VDataTable>['headers']
 
@@ -25,11 +24,7 @@ const custom: IconSet = {
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('vuetify:configuration', ({ vuetifyOptions }) => {
-    vuetifyOptions.icons = {
-      defaultSet: 'mdi',
-      aliases,
-      sets: { mdi, custom },
-    }
+    vuetifyOptions.icons!.sets!['custom'] = custom
     const primary = useLocalStorage('theme-primary', '#1697f6').value
     vuetifyOptions.theme = {
       themes: {
