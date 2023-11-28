@@ -55,7 +55,7 @@ export default defineNuxtConfig({
           }
         },
         sourcemap: false,
-      }),
+      }) as any, // Currently Nuxt and Nitro have rollup version mismatch
     ],
   },
   runtimeConfig: {
