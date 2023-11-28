@@ -11,7 +11,6 @@
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@kingyue/rollup-plugin-modify": "^4.1.0",
     "@mdi/js": "^7.3.67",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
@@ -19,6 +18,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "nuxt": "^3.8.1",
     "prettier": "^3.1.0",
+    "rollup-plugin-regexp": "^5.0.1",
     "vue-tsc": "^1.8.22",
     "vuetify-nuxt-module": "^0.7.0"
   },

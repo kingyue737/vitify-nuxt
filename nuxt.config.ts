@@ -1,4 +1,4 @@
-import Modify from '@kingyue/rollup-plugin-modify'
+import regexpPlugin from 'rollup-plugin-regexp'
 import * as mdicons from '@mdi/js'
 
 const mdi: Record<string, string> = {}
@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [
-      Modify({
+      regexpPlugin({
         exclude: ['node_modules/**'],
         find: /\b(?<![/\w])(mdi-[\w-]+)\b(?!\.)/,
         replace: (match: string) => {
@@ -50,7 +50,7 @@ export default defineNuxtConfig({
             return mdi[match]
           } else {
             // eslint-disable-next-line no-console
-            console.warn('[plugin-modify] No matched svg icon for ' + match)
+            console.warn('[plugin-regexp] No matched svg icon for ' + match)
             return match
           }
         },

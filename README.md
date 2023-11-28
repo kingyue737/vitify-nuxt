@@ -76,7 +76,7 @@
 
 ### Plugins
 
-- [`rollup-plugin-modify`](https://github.com/kingyue737/rollup-plugin-modify) - auto replace [`@mdi/font`](https://github.com/Templarian/MaterialDesign-Webfont) with [`@mdi/js`](https://github.com/Templarian/MaterialDesign-JS) in `<VIcon>`, significantly reduce bundle size
+- [`rollup-plugin-regexp`](https://github.com/kingyue737/rollup-plugin-regexp) - auto replace [`@mdi/font`](https://github.com/Templarian/MaterialDesign-Webfont) with [`@mdi/js`](https://github.com/Templarian/MaterialDesign-JS) in `<VIcon>`, reduce bundle size
 
 ### Coding Style
 
