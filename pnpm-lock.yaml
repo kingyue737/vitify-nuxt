@@ -18,8 +18,8 @@ dependencies:
     specifier: ^0.0.13
     version: 0.0.13
   vue-echarts:
-    specifier: ^6.6.4
-    version: 6.6.4(echarts@5.4.3)(vue@3.3.11)
+    specifier: 6.6.1
+    version: 6.6.1(echarts@5.4.3)(vue@3.3.11)
 
 devDependencies:
   '@mdi/js':
@@ -6205,8 +6205,8 @@ packages:
   /vue-devtools-stub@0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
 
-  /vue-echarts@6.6.4(echarts@5.4.3)(vue@3.3.11):
-    resolution: {integrity: sha512-WtTAdwcLgbCsblOlbOfOr9tOHrR6ufEfoZwPbXHp/HVRXCLlh/GaAIXtqdjGSr/YtCEQNkaW0FpR2c9ukzxVmw==}
+  /vue-echarts@6.6.1(echarts@5.4.3)(vue@3.3.11):
+    resolution: {integrity: sha512-EpreTzlNeJ+eaUn0AhXEmKJk98xJGecgTqAdyZovoXWnhTxnlW2HuBM0ei3y8rLw1JCUabf8/sYvxjlr8SzBKQ==}
     requiresBuild: true
     peerDependencies:
       '@vue/composition-api': ^1.0.5
