@@ -27,6 +27,6 @@
     "@vueuse/nuxt": "^10.7.0",
     "echarts": "^5.4.3",
     "nuxt-auth-utils": "^0.0.13",
-    "vue-echarts": "6.6.1"
+    "vue-echarts": "^6.6.5"
   }
 }
