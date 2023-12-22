@@ -38,9 +38,6 @@ html {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .v-select__selection {
-    margin-bottom: 2px;
-  }
 }
 
 .v-tab {
