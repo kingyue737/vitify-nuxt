@@ -39,6 +39,8 @@
 
 - 🦾 TypeScript 100%
 
+- 🧪 Unit, Component and E2E Testing with [@nuxt/test-utils](https://github.com/nuxt/test-utils)
+
 <br>
 
 ### Admin Starter Template
@@ -113,7 +115,7 @@ pnpm i
 
 ### Authentication Setup
 
-> You can switch to any [OAuth Providers](https://github.com/Atinux/nuxt-auth-utils#supported-oauth-providers) supported by [Nuxt Auth Utils](https://github.com/Atinux/nuxt-auth-utils).
+> You can switch to any [OAuth Providers](https://github.com/Atinux/nuxt-auth-utils#supported-oauth-providers) supported by [Nuxt Auth Utils](https://github.com/Atinux/nuxt-auth-utils) or write your own.
 
 Create a [GitHub OAuth Application](https://github.com/settings/applications/new) with:
 
