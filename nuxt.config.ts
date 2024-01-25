@@ -16,7 +16,7 @@ Object.keys(mdicons).forEach((key) => {
 export default defineNuxtConfig({
   devtools: { enabled: true },
   build: {
-    transpile: ['vue-echarts'],
+    transpile: ['vue-echarts', 'resize-detector'],
   },
   // you can turn on SSR but Vuetify has a layout bug
   // https://github.com/vuetifyjs/vuetify/issues/15202
