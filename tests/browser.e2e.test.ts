@@ -4,13 +4,18 @@ import { describe, it } from 'vitest'
 
 await setup({
   rootDir: fileURLToPath(new URL('../', import.meta.url)),
+  browser: true,
 })
 describe('page /homepage', () => {
-  it('should render', async () => {
-    const page = await createPage('/')
-    await page.getByText('Opinionated Starter Template').isVisible()
-    await page.close()
-  })
+  it(
+    'should render',
+    async () => {
+      const page = await createPage('/')
+      await page.getByText('Opinionated Starter Template').isVisible()
+      await page.close()
+    },
+    { timeout: 20000 },
+  )
 
   it('should show notification', async () => {
     const page = await createPage('/')
