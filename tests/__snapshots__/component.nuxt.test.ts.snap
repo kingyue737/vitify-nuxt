@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`component DialogConfirm.vue > should open and close 1`] = `
+"<div class="v-card v-card--flat v-theme--light v-card--border v-card--density-default rounded-lg v-card--variant-elevated" style="z-index: -1;">
+  <!---->
+  <div class="v-card__loader">
+    <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <!---->
+      <div class="v-progress-linear__background bg-primary" style="width: 100%;"></div>
+      <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
+        <div class="v-progress-linear__indeterminate">
+          <div class="v-progress-linear__indeterminate long bg-primary"></div>
+          <div class="v-progress-linear__indeterminate short bg-primary"></div>
+        </div>
+      </transition-stub>
+      <!---->
+    </div>
+  </div>
+  <!---->
+  <!---->
+  <div class="v-card-text font-weight-bold d-flex"><i class="v-icon notranslate v-theme--light v-icon--size-default text-warning mr-2" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true">
+        <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path>
+      </svg></i><span>message</span></div>
+  <div class="v-card-actions">
+    <div class="v-spacer"></div><button type="button" class="v-btn v-btn--slim v-theme--light text-primary darken-1 v-btn--density-default rounded-xl v-btn--size-default v-btn--variant-text"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+      <!----><span class="v-btn__content" data-no-activator="">Cancel</span>
+      <!---->
+      <!---->
+    </button><button type="button" class="v-btn v-btn--slim v-theme--light text-primary darken-1 v-btn--density-default rounded-xl v-btn--size-default v-btn--variant-text"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+      <!----><span class="v-btn__content" data-no-activator="">Confirm</span>
+      <!---->
+      <!---->
+    </button>
+    <div class="v-spacer"></div>
+  </div>
+  <!---->
+  <!----><span class="v-card__underlay"></span>
+</div>"
+`;

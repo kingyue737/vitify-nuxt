@@ -5,13 +5,10 @@ const props = withDefaults(
   defineProps<{ level?: number; item: RouteRecordRaw }>(),
   { level: 0 },
 )
-const visibleChildren = computed(
-  () =>
-    props.item.children
-      ?.filter((child) => child.meta?.icon)
-      .sort(
-        (a, b) => (a.meta?.drawerIndex ?? 99) - (b.meta?.drawerIndex ?? 98),
-      ),
+const visibleChildren = computed(() =>
+  props.item.children
+    ?.filter((child) => child.meta?.icon)
+    .sort((a, b) => (a.meta?.drawerIndex ?? 99) - (b.meta?.drawerIndex ?? 98)),
 )
 const visibleChildrenNum = computed(() => visibleChildren.value?.length || 0)
 const isItem = computed(
