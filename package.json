@@ -8,6 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
+    "test": "vitest",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "devDependencies": {
