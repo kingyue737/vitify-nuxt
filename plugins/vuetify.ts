@@ -1,6 +1,6 @@
 import { type IconSet, type IconProps } from 'vuetify'
-import type { VDataTable } from 'vuetify/lib/components/index.mjs'
-export type DataTableHeaders = InstanceType<typeof VDataTable>['headers']
+import type { VDataTable } from 'vuetify/components'
+export type DataTableHeaders = VDataTable['$props']['headers']
 
 function filename(path: string) {
   return path
