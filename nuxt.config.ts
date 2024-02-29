@@ -66,9 +66,7 @@ export default defineNuxtConfig({
     },
     session: {
       name: 'nuxt-session',
-      password: process.env.CI
-        ? 'your-super-long-secret-for-session-encryption'
-        : '',
+      password: '',
     },
   },
 })
