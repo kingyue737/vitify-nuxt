@@ -35,8 +35,7 @@ function toggleAll() {
         :rounded="0"
         v-bind="props"
         @click="toggleAll"
-      >
-      </v-btn>
+      />
     </template>
     <span>Notification</span>
   </v-tooltip>
@@ -51,23 +50,20 @@ function toggleAll() {
         <v-toolbar-title
           class="font-weight-light text-body-1"
           :text="notifications.length ? 'Notification' : 'No New Notifications'"
-        >
-        </v-toolbar-title>
+        />
         <v-btn
           size="small"
           icon="mdi-bell-remove"
           title="Clear All Notifications"
           @click="emptyNotifications"
-        >
-        </v-btn>
+        />
         <v-btn
           class="mr-0"
           size="small"
           icon="$expand"
           title="Hide Notifications"
           @click="toggleAll"
-        >
-        </v-btn>
+        />
       </v-toolbar>
       <v-slide-y-reverse-transition
         tag="div"

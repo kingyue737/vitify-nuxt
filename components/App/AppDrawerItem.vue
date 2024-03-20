@@ -25,11 +25,10 @@ const icon = computed(() => props.item.meta?.icon)
     :prepend-icon="icon"
     active-class="text-primary"
     :title="title"
-  >
-  </v-list-item>
+  />
   <v-list-group v-else-if="icon" :prepend-icon="icon" color="primary">
     <template #activator="{ props: vProps }">
-      <v-list-item :title="title" v-bind="vProps"></v-list-item>
+      <v-list-item :title="title" v-bind="vProps" />
     </template>
     <AppDrawerItem
       v-for="child in visibleChildren"

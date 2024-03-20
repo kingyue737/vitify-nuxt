@@ -29,7 +29,7 @@ definePageMeta({
     <v-btn :disabled="!name" class="mr-2" color="primary" @click="sayHi">
       Confirm
     </v-btn>
-    <v-btn :disabled="!name" @click="warning">Cancel</v-btn>
+    <v-btn :disabled="!name" @click="warning"> Cancel </v-btn>
   </div>
 </template>
 

@@ -5,5 +5,5 @@ definePageMeta({
 })
 </script>
 <template>
-  <v-container fluid>empty page</v-container>
+  <v-container fluid> empty page </v-container>
 </template>

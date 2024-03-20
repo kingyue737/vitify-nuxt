@@ -29,9 +29,9 @@ const { loggedIn, clear, user } = useUserSession()
 <template>
   <v-app-bar flat>
     <v-app-bar-nav-icon @click="drawer = !drawer" />
-    <v-breadcrumbs :items="breadcrumbs"> </v-breadcrumbs>
+    <v-breadcrumbs :items="breadcrumbs" />
     <v-spacer />
-    <div id="app-bar"></div>
+    <div id="app-bar" />
     <client-only>
       <div>
         <v-switch
@@ -44,7 +44,7 @@ const { loggedIn, clear, user } = useUserSession()
           true-icon="mdi-weather-night"
           style="opacity: 0.8"
           @update:model-value="toggleDark"
-        ></v-switch>
+        />
       </div>
     </client-only>
     <v-btn
@@ -54,7 +54,7 @@ const { loggedIn, clear, user } = useUserSession()
       class="ml-2"
       target="_blank"
     >
-      <v-icon size="30" icon="mdi-github"></v-icon>
+      <v-icon size="30" icon="mdi-github" />
     </v-btn>
     <v-menu location="bottom">
       <template #activator="{ props: menu }">
@@ -76,14 +76,13 @@ const { loggedIn, clear, user } = useUserSession()
           title="Login"
           prepend-icon="mdi-github"
           href="/api/auth/github"
-        ></v-list-item>
+        />
         <v-list-item
           v-else
           title="Logout"
           prepend-icon="mdi-logout"
           @click="clear"
-        >
-        </v-list-item>
+        />
       </v-list>
     </v-menu>
   </v-app-bar>
