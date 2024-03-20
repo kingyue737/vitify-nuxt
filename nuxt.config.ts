@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'vuetify-nuxt-module',
     'nuxt-auth-utils',
+    '@nuxt/eslint',
     '@nuxt/test-utils/module',
   ],
   css: ['~/assets/styles/index.css'],

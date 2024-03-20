@@ -83,7 +83,7 @@
 ### Coding Style
 
 - [Prettier](https://prettier.io/), single quotes, no semi
-- [ESLint](https://eslint.org/) with adapted [@nuxt/eslint-config](https://github.com/nuxt/eslint-config)
+- [ESLint flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new) with adapted [@nuxt/eslint](https://github.com/nuxt/eslint), future-proof
 
 ### Dev tools
 
