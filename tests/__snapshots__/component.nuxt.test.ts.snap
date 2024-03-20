@@ -23,11 +23,11 @@ exports[`component DialogConfirm.vue > should open and close 1`] = `
       </svg></i><span>message</span></div>
   <div class="v-card-actions">
     <div class="v-spacer"></div><button type="button" class="v-btn v-btn--slim v-theme--light text-primary darken-1 v-btn--density-default rounded-xl v-btn--size-default v-btn--variant-text"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-      <!----><span class="v-btn__content" data-no-activator="">Cancel</span>
+      <!----><span class="v-btn__content" data-no-activator=""> Cancel </span>
       <!---->
       <!---->
     </button><button type="button" class="v-btn v-btn--slim v-theme--light text-primary darken-1 v-btn--density-default rounded-xl v-btn--size-default v-btn--variant-text"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
-      <!----><span class="v-btn__content" data-no-activator="">Confirm</span>
+      <!----><span class="v-btn__content" data-no-activator=""> Confirm </span>
       <!---->
       <!---->
     </button>
