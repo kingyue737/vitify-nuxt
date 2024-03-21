@@ -1,16 +1,10 @@
-import nuxt from './.nuxt/eslint.config.mjs'
-import eslintConfigPrettier from 'eslint-config-prettier'
+import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default [
-  ...nuxt,
-  // @nuxt/eslint may disable all stylistic rules by default in the future
-  // https://github.com/nuxt/eslint/issues/342#issuecomment-2009005053
-  // remove eslint-config-prettier at that time
-  eslintConfigPrettier,
-  {
-    rules: {
-      'vue/valid-v-slot': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
-    },
+export default withNuxt({
+  rules: {
+    'vue/valid-v-slot': 'off',
+    'vue/html-closing-bracket-newline': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
-]
+})
