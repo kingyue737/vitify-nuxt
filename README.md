@@ -135,6 +135,8 @@ To create sealed sessions, you also need to add `NUXT_SESSION_SECRET` in the `.e
 NUXT_SESSION_SECRET=your-super-long-secret-for-session-encryption
 ```
 
+Nuxt Auth Utils generates one for you when running Nuxt in development the first time if no `NUXT_SESSION_PASSWORD` is set.
+
 ### Development
 
 Start the development server on http://localhost:3000
