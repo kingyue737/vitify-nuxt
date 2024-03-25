@@ -29,7 +29,7 @@
 
 - 💥 SSR out of the box - powered by [Vuetify Nuxt module](https://github.com/userquin/vuetify-nuxt-module)
 
-- ⚡️ [Vite 4](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org/)
 
