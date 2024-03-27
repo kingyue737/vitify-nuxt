@@ -48,7 +48,7 @@ html {
   opacity: 0.5;
 }
 
-.v-field--active {
+.v-field--focused {
   .v-icon {
     color: rgb(var(--v-theme-primary));
   }
