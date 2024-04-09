@@ -51,7 +51,7 @@ export default defineNuxtConfig({
           if (mdi[match]) {
             return mdi[match]
           } else {
-            // eslint-disable-next-line no-console
+             
             console.warn('[plugin-regexp] No matched svg icon for ' + match)
             return match
           }
