@@ -39,7 +39,7 @@ export const Notify = {
     useNotificationStore().addNotification(text, 'success'),
   warning: (text: string) =>
     useNotificationStore().addNotification(text, 'warning'),
-  error: (val: any) => {
+  error: (val: unknown) => {
     let text = ''
     if (typeof val === 'string') {
       text = val

@@ -48,10 +48,7 @@ nextTick(() => {
     <v-spacer />
     <template #append>
       <v-list-item class="drawer-footer px-0 d-flex flex-column justify-center">
-        <div
-          class="text-caption pt-6 pt-md-0 text-center"
-          style="white-space: nowrap"
-        >
+        <div class="text-caption pt-6 pt-md-0 text-center text-no-wrap">
           &copy; Copyright 2023
           <a
             href="https://github.com/kingyue737"
