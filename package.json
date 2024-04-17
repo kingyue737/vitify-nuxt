@@ -15,16 +15,17 @@
   },
   "devDependencies": {
     "@mdi/js": "^7.4.47",
-    "@nuxt/eslint": "0.3.2",
-    "@nuxt/test-utils": "^3.12.0",
+    "@nuxt/eslint": "0.3.7",
+    "@nuxt/test-utils": "^3.12.1",
     "@vue/test-utils": "^2.4.5",
-    "happy-dom": "^13.10.1",
+    "eslint": "^8.57.0",
+    "happy-dom": "^14.7.1",
     "nuxt": "^3.11.2",
-    "playwright-core": "^1.43.0",
+    "playwright-core": "^1.43.1",
     "prettier": "^3.2.5",
     "rollup-plugin-regexp": "^5.0.1",
-    "vitest": "^1.4.0",
-    "vue-tsc": "^2.0.11",
+    "vitest": "^1.5.0",
+    "vue-tsc": "^2.0.13",
     "vuetify-nuxt-module": "^0.13.2"
   },
   "dependencies": {
