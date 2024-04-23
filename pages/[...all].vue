@@ -1,25 +1,10 @@
-<script lang="ts">
-export default defineComponent({
-  name: 'ErrorPage',
-})
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="wrapper">
-    <v-icon class="logo mb-4" icon="custom:nustar" />
-    <p class="text-h5">404 Not Found</p>
-  </div>
+  <v-empty-state
+    headline="Whoops, 404"
+    title="Page not found"
+    text="The page you were looking for does not exist"
+    icon="custom:nustar"
+  />
 </template>
-
-<style scoped>
-.wrapper {
-  position: relative;
-  top: calc(50vh - 250px);
-  text-align: center;
-  opacity: 0.6;
-}
-.logo {
-  font-size: 12em;
-  opacity: 0.2;
-}
-</style>

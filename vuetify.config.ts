@@ -3,6 +3,7 @@ import { md3 } from 'vuetify/blueprints'
 
 export default defineVuetifyConfiguration({
   blueprint: md3,
+  labComponents: ['VEmptyState'],
   locale: {
     locale: 'zhHans',
     fallback: 'en',
