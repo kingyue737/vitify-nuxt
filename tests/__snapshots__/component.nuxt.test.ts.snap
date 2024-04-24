@@ -4,9 +4,10 @@ exports[`component DialogConfirm.vue > should open and close 1`] = `
 "<div class="v-card v-card--flat v-theme--light v-card--border v-card--density-default rounded-lg v-card--variant-elevated" style="z-index: -1;">
   <!---->
   <div class="v-card__loader">
-    <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+    <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
       <!---->
-      <div class="v-progress-linear__background bg-primary" style="width: 100%;"></div>
+      <div class="v-progress-linear__background bg-primary" style="opacity: NaN;"></div>
+      <div class="v-progress-linear__buffer bg-primary" style="opacity: NaN; width: 0%;"></div>
       <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
         <div class="v-progress-linear__indeterminate">
           <div class="v-progress-linear__indeterminate long bg-primary"></div>
