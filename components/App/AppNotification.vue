@@ -21,18 +21,12 @@ function toggleAll() {
 </script>
 
 <template>
-  <v-tooltip location="top" text="Notification">
-    <template #activator="{ props }">
-      <v-btn
-        :icon="
-          notifications.length ? 'mdi-bell-badge-outline' : 'mdi-bell-outline'
-        "
-        :rounded="0"
-        v-bind="props"
-        @click="toggleAll"
-      />
-    </template>
-  </v-tooltip>
+  <v-btn
+    v-tooltip="{ text: 'Notification' }"
+    :icon="notifications.length ? 'mdi-bell-badge-outline' : 'mdi-bell-outline'"
+    :rounded="0"
+    @click="toggleAll"
+  />
   <teleport to="body">
     <v-card
       elevation="6"
@@ -45,27 +39,19 @@ function toggleAll() {
           class="font-weight-light text-body-1"
           :text="notifications.length ? 'Notification' : 'No New Notifications'"
         />
-        <v-tooltip location="top" text="Clear All Notifications">
-          <template #activator="{ props }">
-            <v-btn
-              v-bind="props"
-              size="small"
-              icon="mdi-bell-remove"
-              @click="emptyNotifications"
-            />
-          </template>
-        </v-tooltip>
-        <v-tooltip location="top" text="Hide Notifications">
-          <template #activator="{ props }">
-            <v-btn
-              v-bind="props"
-              class="mr-0"
-              size="small"
-              icon="$expand"
-              @click="toggleAll"
-            />
-          </template>
-        </v-tooltip>
+        <v-btn
+          v-tooltip="{ text: 'Clear All Notifications' }"
+          size="small"
+          icon="mdi-bell-remove"
+          @click="emptyNotifications"
+        />
+        <v-btn
+          v-tooltip="{ text: 'Hide Notifications' }"
+          class="mr-0"
+          size="small"
+          icon="$expand"
+          @click="toggleAll"
+        />
       </v-toolbar>
       <v-slide-y-reverse-transition
         tag="div"

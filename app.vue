@@ -29,8 +29,7 @@ useSeoMeta({
   <v-app>
     <AppDrawer />
     <AppBar />
-    <!-- https://github.com/vuetifyjs/vuetify/issues/15202 -->
-    <v-main style="--v-layout-top: 64px; --v-layout-bottom: 32px">
+    <v-main>
       <NuxtPage />
     </v-main>
     <AppFooter />
@@ -38,10 +37,11 @@ useSeoMeta({
 </template>
 
 <style scoped>
+/* replace padding with margin to limit scrollbar in v-main */
 .v-main {
   padding-top: 0;
-  margin-top: var(--v-layout-top);
   padding-bottom: 0;
+  margin-top: var(--v-layout-top);
   margin-bottom: var(--v-layout-bottom);
   height: calc(100vh - var(--v-layout-top) - var(--v-layout-bottom));
   overflow-y: auto;

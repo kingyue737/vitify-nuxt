@@ -18,8 +18,6 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vue-echarts', 'resize-detector'],
   },
-  // you can turn on SSR but Vuetify has a layout bug
-  // https://github.com/vuetifyjs/vuetify/issues/15202
   ssr: true,
   modules: [
     '@pinia/nuxt',

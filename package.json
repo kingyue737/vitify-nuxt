@@ -26,13 +26,18 @@
     "rollup-plugin-regexp": "^5.0.1",
     "vitest": "^1.5.0",
     "vue-tsc": "^2.0.14",
-    "vuetify-nuxt-module": "^0.13.2"
+    "vuetify-nuxt-module": "^0.13.3"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/nuxt": "^10.9.0",
     "echarts": "^5.5.0",
     "nuxt-auth-utils": "^0.0.24",
-    "vue-echarts": "^6.6.10"
+    "vue-echarts": "^6.7.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "vuetify": "3.6.0-beta.0.0"
+    }
   }
 }

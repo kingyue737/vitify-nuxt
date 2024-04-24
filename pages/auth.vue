@@ -53,26 +53,14 @@ watch(loggedIn, () => {
                   VIcon: {
                     size: 20,
                   },
+                  VTooltip: {
+                    location: 'top',
+                  },
                 }"
               >
-                <v-tooltip location="top">
-                  <template #activator="{ props }">
-                    <v-btn icon="mdi-pencil" v-bind="props" />
-                  </template>
-                  <span>Edit</span>
-                </v-tooltip>
-                <v-tooltip location="top">
-                  <template #activator="{ props }">
-                    <v-btn icon="mdi-content-copy" v-bind="props" />
-                  </template>
-                  <span>Copy</span>
-                </v-tooltip>
-                <v-tooltip location="top">
-                  <template #activator="{ props }">
-                    <v-btn icon="mdi-delete" v-bind="props" />
-                  </template>
-                  <span>Delete</span>
-                </v-tooltip>
+                <v-btn v-tooltip="{ text: 'Edit' }" icon="mdi-pencil" />
+                <v-btn v-tooltip="{ text: 'Copy' }" icon="mdi-content-copy" />
+                <v-btn v-tooltip="{ text: 'Delete' }" icon="mdi-delete" />
               </v-defaults-provider>
             </template>
           </v-data-table>

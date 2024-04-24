@@ -31,7 +31,7 @@ const menuShow = ref(false)
     offset="15"
   >
     <template #activator="{ props: menu }">
-      <v-tooltip location="top">
+      <v-tooltip location="top" text="Theme Palette">
         <template #activator="{ props: tooltip }">
           <v-btn
             icon="mdi-palette-outline"
@@ -39,7 +39,6 @@ const menuShow = ref(false)
             :rounded="0"
           />
         </template>
-        <span>Theme Palette</span>
       </v-tooltip>
     </template>
     <v-card width="320">

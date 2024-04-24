@@ -173,16 +173,11 @@ const desserts = ref([
                   },
                 }"
               >
-                <v-tooltip location="top">
-                  <template #activator="{ props }">
-                    <v-btn
-                      icon="mdi-delete-outline"
-                      v-bind="props"
-                      @click.stop="showDialogDelete(item.name)"
-                    />
-                  </template>
-                  <span>Delete</span>
-                </v-tooltip>
+                <v-btn
+                  v-tooltip="{ text: 'Delete', location: 'top' }"
+                  icon="mdi-delete-outline"
+                  @click.stop="showDialogDelete(item.name)"
+                />
               </v-defaults-provider>
             </template>
           </v-data-table>
