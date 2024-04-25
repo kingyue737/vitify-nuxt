@@ -19,7 +19,12 @@ drawerState.value = lgAndUp.value && width.value !== 1280
 </script>
 
 <template>
-  <v-navigation-drawer v-model="drawer" :expand-on-hover="rail" :rail="rail">
+  <v-navigation-drawer
+    v-model="drawer"
+    :expand-on-hover="rail"
+    :rail="rail"
+    floating
+  >
     <template #prepend>
       <v-list>
         <v-list-item class="pa-1">
@@ -72,7 +77,6 @@ drawerState.value = lgAndUp.value && width.value !== 1280
   transition-property: box-shadow, transform, visibility, width, height, left,
     right, top, bottom, border-radius !important;
   overflow: hidden;
-  border-width: 0px !important;
   &.v-navigation-drawer--rail {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;

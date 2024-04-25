@@ -30,6 +30,7 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/index.css'],
   experimental: { typedPages: true },
   typescript: { shim: false, strict: true },
+  vue: { propsDestructure: true },
   vuetify: {
     moduleOptions: {
       ssrClientHints: {
