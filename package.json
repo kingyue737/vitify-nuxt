@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.0.5",
+  "packageManager": "pnpm@9.0.6",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -18,15 +18,15 @@
     "@nuxt/eslint": "0.3.10",
     "@nuxt/test-utils": "^3.12.1",
     "@vue/test-utils": "^2.4.5",
-    "eslint": "^9.1.1",
+    "eslint": "^9.2.0",
     "happy-dom": "^14.7.1",
     "nuxt": "^3.11.2",
     "playwright-core": "^1.43.1",
     "prettier": "^3.2.5",
     "rollup-plugin-regexp": "^5.0.1",
-    "vitest": "^1.5.2",
-    "vue-tsc": "^2.0.14",
-    "vuetify-nuxt-module": "^0.13.4"
+    "vitest": "^1.6.0",
+    "vue-tsc": "^2.0.16",
+    "vuetify-nuxt-module": "^0.13.5"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
@@ -36,9 +36,6 @@
     "vue-echarts": "^6.7.1"
   },
   "pnpm": {
-    "overrides": {
-      "vuetify": "3.6.0-beta.0.0"
-    },
     "peerDependencyRules": {
       "allowedVersions": {
         "@typescript-eslint/eslint-plugin>eslint": "^9.0.0",
