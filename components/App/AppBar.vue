@@ -57,7 +57,7 @@ const { loggedIn, clear, user } = useUserSession()
       <template #activator="{ props: menu }">
         <v-tooltip location="bottom">
           <template #activator="{ props: tooltip }">
-            <v-btn icon large v-bind="mergeProps(menu, tooltip)" class="ml-1">
+            <v-btn icon v-bind="mergeProps(menu, tooltip)" class="ml-1">
               <v-icon v-if="!loggedIn" icon="mdi-account-circle" size="36" />
               <v-avatar v-else color="primary" size="36">
                 <v-img :src="`https://github.com/${user!.login}.png`" />
