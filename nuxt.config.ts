@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   experimental: { typedPages: true },
   typescript: { shim: false, strict: true },
   vue: { propsDestructure: true },
-  // vueuse: { ssrHandlers: true },
+  vueuse: { ssrHandlers: true },
   vuetify: {
     moduleOptions: {
       ssrClientHints: {
