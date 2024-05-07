@@ -18,7 +18,6 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vue-echarts', 'resize-detector'],
   },
-  ssr: true,
   modules: [
     '@pinia/nuxt',
     '@vueuse/nuxt',
@@ -31,6 +30,7 @@ export default defineNuxtConfig({
   experimental: { typedPages: true },
   typescript: { shim: false, strict: true },
   vue: { propsDestructure: true },
+  // vueuse: { ssrHandlers: true },
   vuetify: {
     moduleOptions: {
       ssrClientHints: {

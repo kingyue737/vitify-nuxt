@@ -17,12 +17,14 @@ const breadcrumbs = computed(() => {
       to: r.path,
     }))
 })
-const isDark = useDark({
-  onChanged(dark: boolean) {
-    theme.global.name.value = dark ? 'dark' : 'light'
+const isDark = computed({
+  get() {
+    return theme.global.name.value === 'dark' ? true : false
+  },
+  set(v) {
+    theme.global.name.value = v ? 'dark' : 'light'
   },
 })
-const toggleDark = useToggle<true, false | null>(isDark)
 const { loggedIn, clear, user } = useUserSession()
 </script>
 
@@ -32,21 +34,16 @@ const { loggedIn, clear, user } = useUserSession()
     <v-breadcrumbs :items="breadcrumbs" />
     <v-spacer />
     <div id="app-bar" />
-    <client-only>
-      <div>
-        <v-switch
-          :model-value="isDark"
-          color=""
-          hide-details
-          density="compact"
-          inset
-          false-icon="mdi-white-balance-sunny"
-          true-icon="mdi-weather-night"
-          style="opacity: 0.8"
-          @update:model-value="toggleDark"
-        />
-      </div>
-    </client-only>
+    <v-switch
+      v-model="isDark"
+      color=""
+      hide-details
+      density="compact"
+      inset
+      false-icon="mdi-white-balance-sunny"
+      true-icon="mdi-weather-night"
+      class="opacity-80"
+    />
     <v-btn
       icon
       href="https://github.com/kingyue737/vitify-nuxt"

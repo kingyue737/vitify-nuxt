@@ -44,6 +44,10 @@ html {
   border-radius: 0 !important;
 }
 
+.v-list-item-title {
+  text-overflow: unset !important;
+}
+
 .v-breadcrumbs-divider {
   opacity: 0.5;
 }

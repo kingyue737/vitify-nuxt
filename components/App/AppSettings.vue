@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { mergeProps } from 'vue'
+import { useStorage } from '@vueuse/core'
 
 const theme = useTheme()
-const { store } = useColorMode()
+const primary = useStorage('theme-primary', '#1697f6')
 const color = computed({
   get() {
     return theme.themes.value.light.colors.primary
   },
   set(val: string) {
-    localStorage.setItem('theme-primary', val)
+    primary.value = val
     theme.themes.value.light.colors.primary = val
     theme.themes.value.dark.colors.primary = val
   },
@@ -53,13 +54,6 @@ const menuShow = ref(false)
           :modes="['rgb', 'hex', 'hsl']"
           :swatches="colors"
         />
-        <v-btn-toggle v-model="store" mandatory class="mt-2" rounded="lg">
-          <v-btn prepend-icon="mdi-white-balance-sunny" value="light">
-            Light
-          </v-btn>
-          <v-btn prepend-icon="mdi-weather-night" value="dark"> Dark </v-btn>
-          <v-btn prepend-icon="mdi-laptop" value="auto"> System </v-btn>
-        </v-btn-toggle>
       </v-card-text>
     </v-card>
   </v-menu>
