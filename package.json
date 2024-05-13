@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.1.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@mdi/js": "^7.4.47",
-    "@nuxt/eslint": "0.3.10",
+    "@nuxt/eslint": "0.3.12",
     "@nuxt/test-utils": "^3.12.1",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.2.0",
@@ -25,8 +25,8 @@
     "prettier": "^3.2.5",
     "rollup-plugin-regexp": "^5.0.1",
     "vitest": "^1.6.0",
-    "vue-tsc": "^2.0.16",
-    "vuetify-nuxt-module": "^0.13.5"
+    "vue-tsc": "^2.0.17",
+    "vuetify-nuxt-module": "^0.14.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
