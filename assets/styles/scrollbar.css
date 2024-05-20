@@ -8,10 +8,14 @@
   background-clip: content-box;
   min-height: 28px;
   border: 2px solid transparent;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(149, 149, 149, 0.4);
   border: 1px solid transparent;
-  border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
