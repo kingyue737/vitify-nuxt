@@ -57,6 +57,7 @@ export default defineNuxtConfig({
         sourcemap: false,
       }),
     ],
+    build: { sourcemap: false },
   },
   runtimeConfig: {
     github: {
