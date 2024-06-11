@@ -22,10 +22,10 @@
     "happy-dom": "^14.12.0",
     "nuxt": "^3.11.2",
     "playwright-core": "^1.44.1",
-    "prettier": "^3.3.0",
+    "prettier": "^3.3.1",
     "rollup-plugin-regexp": "^5.0.1",
     "vitest": "^1.6.0",
-    "vue-tsc": "^2.0.19",
+    "vue-tsc": "^2.0.21",
     "vuetify-nuxt-module": "^0.14.1"
   },
   "dependencies": {
@@ -33,7 +33,7 @@
     "@vueuse/nuxt": "^10.10.0",
     "echarts": "^5.5.0",
     "nuxt-auth-utils": "^0.0.25",
-    "vue-echarts": "^6.7.2"
+    "vue-echarts": "^6.7.3"
   },
   "pnpm": {
     "peerDependencyRules": {
