@@ -21,7 +21,7 @@
     "eslint": "^9.5.0",
     "happy-dom": "^14.12.3",
     "nuxt": "^3.12.2",
-    "nuxt-echarts": "^0.0.8",
+    "nuxt-echarts": "^0.0.9",
     "playwright-core": "^1.45.0",
     "prettier": "^3.3.2",
     "rollup-plugin-regexp": "^5.0.1",
