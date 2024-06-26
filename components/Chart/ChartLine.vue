@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { ECOption } from '~/plugins/echarts'
-
 const data = [
   ['2022-06-05', 116],
   ['2022-06-06', 129],

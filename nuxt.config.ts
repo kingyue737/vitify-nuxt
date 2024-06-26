@@ -15,14 +15,12 @@ Object.keys(mdicons).forEach((key) => {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  build: {
-    transpile: ['vue-echarts', 'resize-detector'],
-  },
   modules: [
     '@pinia/nuxt',
     '@vueuse/nuxt',
     'vuetify-nuxt-module',
     'nuxt-auth-utils',
+    'nuxt-echarts',
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
   ],
@@ -40,6 +38,20 @@ export default defineNuxtConfig({
         reloadOnFirstRequest: true,
       },
     },
+  },
+  echarts: {
+    charts: ['LineChart', 'BarChart', 'PieChart', 'RadarChart'],
+    renderer: 'svg',
+    components: [
+      'DataZoomComponent',
+      'LegendComponent',
+      'TooltipComponent',
+      'ToolboxComponent',
+      'GridComponent',
+      'TitleComponent',
+      'DatasetComponent',
+      'VisualMapComponent',
+    ],
   },
   vite: {
     plugins: [
