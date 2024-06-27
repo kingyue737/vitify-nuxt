@@ -21,6 +21,7 @@
     "eslint": "^9.5.0",
     "happy-dom": "^14.12.3",
     "nuxt": "^3.12.2",
+    "nuxt-echarts": "^0.0.9",
     "playwright-core": "^1.45.0",
     "prettier": "^3.3.2",
     "rollup-plugin-regexp": "^5.0.1",
@@ -32,8 +33,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/nuxt": "^10.11.0",
     "echarts": "^5.5.0",
-    "nuxt-auth-utils": "^0.1.0",
-    "vue-echarts": "^6.7.3"
+    "nuxt-auth-utils": "^0.1.0"
   },
   "pnpm": {
     "peerDependencyRules": {

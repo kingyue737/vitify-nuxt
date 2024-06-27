@@ -51,7 +51,7 @@
 
 - 🔔 Notification store
 
-- 📉 Data visualization with [vue-echarts](https://github.com/ecomfe/vue-echarts)
+- 📉 Data visualization with [nuxt-echarts](https://github.com/kingyue737/nuxt-echarts)
 
 - 🎨 Theme color customization and dark mode
 
