@@ -29,7 +29,7 @@ defineExpose({ open })
 
 <template>
   <v-dialog v-model="dialog" max-width="400px">
-    <v-card style="z-index: -1">
+    <v-card>
       <v-card-text class="font-weight-bold d-flex">
         <v-icon class="mr-2" color="warning" icon="$warning" />
         <span>{{ message }}</span>

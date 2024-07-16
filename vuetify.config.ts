@@ -51,6 +51,15 @@ export default defineVuetifyConfiguration({
     VProgressLinear: {
       color: 'primary',
     },
+    VMenu: {
+      VList: {
+        border: true,
+      },
+    },
+    // https://github.com/vuetifyjs/vuetify/issues/19637
+    VTimePicker: {
+      ampmInTitle: true,
+    },
   },
   display: {
     mobileBreakpoint: 'sm',

@@ -103,6 +103,12 @@ drawerState.value = lgAndUp.value && width.value !== 1280
   }
   .v-navigation-drawer__content {
     overflow-y: hidden;
+    @supports (scrollbar-gutter: stable) {
+      scrollbar-gutter: stable;
+      > .v-list--nav {
+        padding-right: 0;
+      }
+    }
     &:hover {
       overflow-y: overlay;
     }
