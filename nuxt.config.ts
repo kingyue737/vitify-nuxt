@@ -81,4 +81,5 @@ export default defineNuxtConfig({
       password: '',
     },
   },
+  compatibilityDate: '2024-08-05',
 })
