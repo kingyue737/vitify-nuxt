@@ -21,8 +21,8 @@
     "eslint": "^9.8.0",
     "happy-dom": "^14.12.3",
     "nuxt": "^3.12.4",
-    "nuxt-echarts": "^0.1.0",
-    "playwright-core": "^1.45.3",
+    "nuxt-echarts": "^0.2.1",
+    "playwright-core": "^1.46.0",
     "prettier": "^3.3.3",
     "rollup-plugin-regexp": "^5.0.1",
     "vitest": "^2.0.5",
@@ -30,8 +30,8 @@
     "vuetify-nuxt-module": "^0.16.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.2",
-    "@vueuse/nuxt": "^10.11.0",
+    "@pinia/nuxt": "^0.5.3",
+    "@vueuse/nuxt": "^10.11.1",
     "nuxt-auth-utils": "^0.3.2"
   },
   "pnpm": {
