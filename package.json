@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.7.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -21,7 +21,7 @@
     "eslint": "^9.8.0",
     "happy-dom": "^14.12.3",
     "nuxt": "^3.12.4",
-    "nuxt-echarts": "^0.2.1",
+    "nuxt-echarts": "0.2.1",
     "playwright-core": "^1.46.0",
     "prettier": "^3.3.3",
     "rollup-plugin-regexp": "^5.0.1",
@@ -39,6 +39,9 @@
       "allowedVersions": {
         "@typescript-eslint/utils>eslint": "^9.0.0"
       }
+    },
+    "patchedDependencies": {
+      "nuxt-echarts": "patches/nuxt-echarts.patch"
     }
   }
 }

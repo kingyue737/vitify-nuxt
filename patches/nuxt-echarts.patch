@@ -1,0 +1,13 @@
+diff --git a/dist/runtime/utils/wc.js b/dist/runtime/utils/wc.js
+index 91b8b2e7e40cda93e3c75450128a71cd4e783009..d6330a6db557b0e3c83823e802227291ac70fb56 100644
+--- a/dist/runtime/utils/wc.js
++++ b/dist/runtime/utils/wc.js
+@@ -1,7 +1,7 @@
+ let registered = null;
+ export const TAG_NAME = "x-vue-echarts";
+ if (import.meta.server) {
+-  global.HTMLElement = Object;
++  globalThis.HTMLElement = Object;
+ }
+ export class EChartsElement extends HTMLElement {
+   __dispose = null;
