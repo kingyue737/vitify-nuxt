@@ -53,7 +53,7 @@ html {
 }
 
 .v-field--focused {
-  .v-icon {
+  .v-field__prepend-inner .v-icon {
     color: rgb(var(--v-theme-primary));
   }
 }
