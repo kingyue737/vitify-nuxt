@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.8.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@mdi/js": "^7.4.47",
-    "@nuxt/eslint": "0.5.0",
+    "@nuxt/eslint": "^0.5.2",
     "@nuxt/test-utils": "^3.14.1",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.9.1",
