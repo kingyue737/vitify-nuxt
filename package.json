@@ -14,25 +14,25 @@
     "format": "prettier . --write"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.68",
-    "@nuxt/eslint": "^0.5.3",
+    "@iconify-json/mdi": "^1.2.0",
+    "@nuxt/eslint": "^0.5.5",
     "@nuxt/icon": "^1.5.0",
     "@nuxt/test-utils": "^3.14.1",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.9.1",
     "happy-dom": "^14.12.3",
     "nuxt": "^3.13.0",
-    "nuxt-echarts": "^0.2.2",
+    "nuxt-echarts": "^0.2.3",
     "playwright-core": "^1.46.1",
     "prettier": "^3.3.3",
     "vitest": "^2.0.5",
-    "vue-tsc": "^2.0.29",
-    "vuetify-nuxt-module": "^0.17.1"
+    "vue-tsc": "^2.1.4",
+    "vuetify-nuxt-module": "^0.18.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.4",
     "@vueuse/nuxt": "^11.0.3",
-    "nuxt-auth-utils": "^0.3.4",
+    "nuxt-auth-utils": "^0.3.5",
     "vuetify": "~3.6.15"
   }
 }

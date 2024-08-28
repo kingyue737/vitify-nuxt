@@ -27,7 +27,6 @@ export default defineNuxtConfig({
     },
   },
   icon: {
-    mode: 'svg',
     clientBundle: {
       // scan all components in the project and include icons
       // scan: true,
