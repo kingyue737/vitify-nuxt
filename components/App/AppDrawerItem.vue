@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { RouteRecordRaw } from 'vue-router'
 
-const { level = 0, item } = defineProps<{
-  level?: number
+const { item } = defineProps<{
   item: RouteRecordRaw
 }>()
 const visibleChildren = computed(() =>
@@ -36,7 +35,6 @@ const to = computed<RouteRecordRaw>(() => ({
       v-for="child in visibleChildren"
       :key="child.name"
       :item="child"
-      :level="level + 1"
     />
   </v-list-group>
 </template>
