@@ -71,14 +71,11 @@
 ### Nuxt Modules
 
 - [Vuetify Nuxt Module](https://github.com/userquin/vuetify-nuxt-module) - Zero-config Nuxt Module for Vuetify
-- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs
-- [Pinia](https://github.com/vuejs/pinia) - intuitive, type-safe, light and flexible Store for Vue
-- [DevTools](https://github.com/nuxt/devtools) - unleash Nuxt Developer Experience
+- [VueUse](https://github.com/vueuse/vueuse) - Collection of useful composition APIs
+- [Pinia](https://github.com/vuejs/pinia) - Intuitive, type-safe, light and flexible Store for Vue
+- [Nuxt Icon](https://github.com/nuxt/icon) - Icon module for Nuxt with 200,000+ ready to use icons from Iconify
+- [Nuxt ECharts](https://github.com/kingyue737/nuxt-echarts) - Nuxt module for Apache ECharts™
 - [Nuxt Auth Utils](https://github.com/Atinux/nuxt-auth-utils) - Minimalist Authentication module for Nuxt
-
-### Plugins
-
-- [`rollup-plugin-regexp`](https://github.com/kingyue737/rollup-plugin-regexp) - auto replace [`@mdi/font`](https://github.com/Templarian/MaterialDesign-Webfont) with [`@mdi/js`](https://github.com/Templarian/MaterialDesign-JS) in `<VIcon>`, reduce bundle size
 
 ### Coding Style
 
@@ -91,11 +88,10 @@
 - [pnpm](https://pnpm.js.org/) - Fast, disk space efficient package manager
 - [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)
-  - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - TypeScript support inside Vue SFCs
+  - [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - TypeScript support inside Vue SFCs
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Find and fix problems in your code
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Code formatter
   - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-  - [Material Design Icons Intellisense](https://marketplace.visualstudio.com/items?itemName=lukas-tr.materialdesignicons-intellisense)
 
 ## Try it now!
 
