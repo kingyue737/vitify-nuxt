@@ -1,17 +1,3 @@
-import regexpPlugin from 'rollup-plugin-regexp'
-import * as mdicons from '@mdi/js'
-
-const mdi: Record<string, string> = {}
-Object.keys(mdicons).forEach((key) => {
-  const value = (mdicons as Record<string, string>)[key]
-  mdi[
-    key
-      .replace(/([A-Z])/g, '-$1')
-      .toLowerCase()
-      .replace(/([0-9]+)/g, '-$1')
-  ] = value
-})
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -21,6 +7,7 @@ export default defineNuxtConfig({
     'vuetify-nuxt-module',
     'nuxt-auth-utils',
     'nuxt-echarts',
+    '@nuxt/icon',
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
   ],
@@ -39,6 +26,19 @@ export default defineNuxtConfig({
       },
     },
   },
+  icon: {
+    mode: 'svg',
+    clientBundle: {
+      // scan all components in the project and include icons
+      // scan: true,
+    },
+    customCollections: [
+      {
+        prefix: 'custom',
+        dir: './assets/icons',
+      },
+    ],
+  },
   echarts: {
     charts: ['LineChart', 'BarChart', 'PieChart', 'RadarChart'],
     renderer: 'svg',
@@ -54,21 +54,6 @@ export default defineNuxtConfig({
     ],
   },
   vite: {
-    plugins: [
-      regexpPlugin({
-        exclude: ['node_modules/**'],
-        find: /\b(?<![/\w])(mdi-[\w-]+)\b(?!\.)/,
-        replace: (match: string) => {
-          if (mdi[match]) {
-            return mdi[match]
-          } else {
-            console.warn('[plugin-regexp] No matched svg icon for ' + match)
-            return match
-          }
-        },
-        sourcemap: false,
-      }),
-    ],
     build: { sourcemap: false },
   },
   runtimeConfig: {

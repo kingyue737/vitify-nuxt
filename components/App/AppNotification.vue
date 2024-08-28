@@ -27,54 +27,58 @@ function toggleAll() {
     :rounded="0"
     @click="toggleAll"
   />
-  <teleport to="body">
-    <v-card
-      elevation="6"
-      width="400"
-      class="d-flex flex-column notification-card"
-      :class="{ 'notification-card--open': showAll }"
-    >
-      <v-toolbar flat density="compact">
-        <v-toolbar-title
-          class="font-weight-light text-body-1"
-          :text="notifications.length ? 'Notification' : 'No New Notifications'"
-        />
-        <v-btn
-          v-tooltip="{ text: 'Clear All Notifications' }"
-          size="small"
-          icon="mdi-bell-remove"
-          @click="emptyNotifications"
-        />
-        <v-btn
-          v-tooltip="{ text: 'Hide Notifications' }"
-          class="mr-0"
-          size="small"
-          icon="$expand"
-          @click="toggleAll"
-        />
-      </v-toolbar>
-      <v-slide-y-reverse-transition
-        tag="div"
-        class="d-flex flex-column notification-box"
-        group
-        hide-on-leave
+  <ClientOnly>
+    <teleport to="body">
+      <v-card
+        elevation="6"
+        width="400"
+        class="d-flex flex-column notification-card"
+        :class="{ 'notification-card--open': showAll }"
       >
-        <div
-          v-for="notification in notificationsShown"
-          :key="notification.id"
-          class="notification-item-wrapper"
-        >
-          <AppNotificationItem
-            v-model="notification.show"
-            :notification="notification"
-            :timeout="timeout"
-            class="notification-item"
-            @close="deleteNotification(notification.id)"
+        <v-toolbar flat density="compact">
+          <v-toolbar-title
+            class="font-weight-light text-body-1"
+            :text="
+              notifications.length ? 'Notification' : 'No New Notifications'
+            "
           />
-        </div>
-      </v-slide-y-reverse-transition>
-    </v-card>
-  </teleport>
+          <v-btn
+            v-tooltip="{ text: 'Clear All Notifications' }"
+            size="small"
+            icon="mdi-bell-remove"
+            @click="emptyNotifications"
+          />
+          <v-btn
+            v-tooltip="{ text: 'Hide Notifications' }"
+            class="mr-0"
+            size="small"
+            icon="$expand"
+            @click="toggleAll"
+          />
+        </v-toolbar>
+        <v-slide-y-reverse-transition
+          tag="div"
+          class="d-flex flex-column notification-box"
+          group
+          hide-on-leave
+        >
+          <div
+            v-for="notification in notificationsShown"
+            :key="notification.id"
+            class="notification-item-wrapper"
+          >
+            <AppNotificationItem
+              v-model="notification.show"
+              :notification="notification"
+              :timeout="timeout"
+              class="notification-item"
+              @close="deleteNotification(notification.id)"
+            />
+          </div>
+        </v-slide-y-reverse-transition>
+      </v-card>
+    </teleport>
+  </ClientOnly>
 </template>
 
 <style scoped>

@@ -7,9 +7,6 @@ export default defineVuetifyConfiguration({
     locale: 'zhHans',
     fallback: 'en',
   },
-  icons: {
-    defaultSet: 'mdi-svg',
-  },
   localeMessages: ['zhHans', 'en'],
   defaults: {
     VSwitch: {

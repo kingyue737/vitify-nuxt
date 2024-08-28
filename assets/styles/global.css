@@ -58,8 +58,7 @@ html {
   }
 }
 
-.v-icon svg {
-  fill: currentColor;
+.v-icon .iconify {
   width: 100%;
   height: 100%;
 }
