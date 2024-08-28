@@ -27,7 +27,7 @@
 
 - 💚 [Nuxt 3](https://nuxt.com/) - SPA, ESR, File-based routing, components auto importing, modules, etc
 
-- 💥 SSR out of the box - powered by [Vuetify Nuxt module](https://github.com/userquin/vuetify-nuxt-module)
+- 💥 SSR out of the box - powered by [Vuetify Nuxt module](https://github.com/vuetifyjs/nuxt-module)
 
 - ⚡️ [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
