@@ -3,6 +3,8 @@ import { md3 } from 'vuetify/blueprints'
 
 export default defineVuetifyConfiguration({
   blueprint: md3,
+  // prevent Vuetify Module from fetching unused `materialdesignicon.css` from cdn
+  icons: false,
   // locale: {
   //   locale: 'zhHans',
   //   fallback: 'en',
