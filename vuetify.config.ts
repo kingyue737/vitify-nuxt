@@ -3,11 +3,11 @@ import { md3 } from 'vuetify/blueprints'
 
 export default defineVuetifyConfiguration({
   blueprint: md3,
-  locale: {
-    locale: 'zhHans',
-    fallback: 'en',
-  },
-  localeMessages: ['zhHans', 'en'],
+  // locale: {
+  //   locale: 'zhHans',
+  //   fallback: 'en',
+  // },
+  // localeMessages: ['zhHans', 'en'],
   defaults: {
     VSwitch: {
       color: 'primary',
