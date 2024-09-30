@@ -1,3 +1,5 @@
+import { aliases } from 'vuetify/iconsets/mdi'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -28,6 +30,10 @@ export default defineNuxtConfig({
   },
   icon: {
     clientBundle: {
+      icons: Object.values(aliases).map((v) =>
+        (v as string).replace(/^mdi-/, 'mdi:'),
+      ),
+      scan: true,
       // scan all components in the project and include icons
       // scan: true,
     },
