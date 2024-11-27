@@ -19,9 +19,7 @@ exports[`component DialogConfirm.vue > should open and close 1`] = `
   </div>
   <!---->
   <!---->
-  <div class="v-card-text font-weight-bold d-flex"><i class="v-icon notranslate v-theme--light v-icon--size-default text-warning mr-2" aria-hidden="true">
-      <!---->
-    </i><span>message</span></div>
+  <div class="v-card-text font-weight-bold d-flex"><i class="v-icon notranslate v-theme--light v-icon--size-default text-warning mr-2" aria-hidden="true"><span class="iconify i-mdi:alert-circle" aria-hidden="true"></span></i><span>message</span></div>
   <div class="v-card-actions">
     <div class="v-spacer"></div><button type="button" class="v-btn v-btn--slim v-theme--light text-primary v-btn--density-default rounded-xl v-btn--size-default v-btn--variant-text"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
       <!----><span class="v-btn__content" data-no-activator=""> Cancel </span>
