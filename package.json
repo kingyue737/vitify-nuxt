@@ -42,6 +42,10 @@
       "allowedVersions": {
         "vue-tsc": "^2.2.0"
       }
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild"
+    ]
   }
 }
