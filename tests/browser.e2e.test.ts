@@ -14,7 +14,7 @@ describe('page /homepage', () => {
       await page.getByText('Opinionated Starter Template').isVisible()
       await page.close()
     },
-    { timeout: 20000 },
+    20000
   )
 
   it('should show notification', async () => {
