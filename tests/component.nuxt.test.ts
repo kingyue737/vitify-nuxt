@@ -6,7 +6,7 @@ import { VCard } from 'vuetify/components'
 describe('component DialogConfirm.vue', () => {
   it('should not open', async () => {
     const wrapper = await mountSuspended(DialogConfirm)
-    expect(wrapper.isVisible()).toBe(false)
+    expect(wrapper.html()).toMatchInlineSnapshot(`""`)
   })
 
   it('should open and close', async () => {
