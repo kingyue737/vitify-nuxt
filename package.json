@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@10.3.0",
+  "packageManager": "pnpm@10.4.1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -15,33 +15,32 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
-    "@nuxt/eslint": "^1.0.1",
+    "@nuxt/eslint": "^1.1.0",
     "@nuxt/icon": "^1.10.3",
-    "@nuxt/test-utils": "^3.15.4",
+    "@nuxt/test-utils": "^3.16.0",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.20.1",
-    "happy-dom": "^16.8.1",
+    "happy-dom": "^17.1.1",
     "nuxt": "^3.15.4",
     "nuxt-echarts": "^0.2.4",
     "playwright-core": "^1.50.1",
-    "prettier": "^3.5.0",
-    "vitest": "^3.0.5",
-    "vue-tsc": "^2.2.0",
+    "prettier": "^3.5.1",
+    "vitest": "^3.0.6",
+    "vue-tsc": "^2.2.2",
     "vuetify-nuxt-module": "^0.18.3"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.10.0",
-    "@vueuse/nuxt": "^12.5.0",
+    "@pinia/nuxt": "^0.10.1",
+    "@vueuse/nuxt": "^12.7.0",
     "echarts": "^5.6.0",
-    "nuxt-auth-utils": "^0.5.14",
-    "pinia": "^3.0.0",
+    "nuxt-auth-utils": "^0.5.16",
+    "pinia": "^3.0.1",
     "vuetify": "~3.6.15"
   },
   "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "vue-tsc": "^2.2.0"
-      }
+    "overrides": {
+      "vite-plugin-checker": "^0.9.0",
+      "@vercel/nft": "^0.29.2"
     },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
