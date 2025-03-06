@@ -17,8 +17,6 @@ declare module '#app' {
     title?: string
     subtitle?: string
     drawerIndex?: number
-    /** If disable or hide breadcrumb. Default is enabled */
-    breadcrumb?: 'hidden' | 'disabled'
   }
 }
 

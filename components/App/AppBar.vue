@@ -6,14 +6,10 @@ const drawer = useState('drawer')
 const route = useRoute()
 const breadcrumbs = computed(() => {
   return route!.matched
-    .filter(
-      (item) =>
-        item.meta && item.meta.title && !(item.meta?.breadcrumb === 'hidden'),
-    )
+    .filter((item) => item.meta && item.meta.title)
     .map((r) => ({
       title: r.meta.title!,
-      disabled:
-        r.meta?.breadcrumb === 'disabled' || r.path === route.path || false,
+      disabled: r.path === route.path || false,
       to: r.path,
     }))
 })
