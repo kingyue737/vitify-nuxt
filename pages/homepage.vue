@@ -14,29 +14,29 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="wrapper">
-    <v-icon icon="custom:vitify-nuxt" size="3em" color="primary" class="mb-4" />
-    <p>Opinionated Starter Template</p>
-    <v-responsive max-width="300" class="mx-auto">
+  <v-container
+    fluid
+    class="d-flex align-items-center justify-center fill-height"
+  >
+    <div class="text-center">
+      <v-icon
+        icon="custom:vitify-nuxt"
+        size="3em"
+        color="primary"
+        class="mb-4"
+      />
+      <p>Opinionated Starter Template</p>
       <v-text-field
         v-model="name"
-        color="primary"
+        max-width="300"
         placeholder="Hello World"
         label="What's your name?"
-        class="mx-auto mt-8"
+        class="mt-8"
       />
-    </v-responsive>
-    <v-btn :disabled="!name" class="mr-2" color="primary" @click="sayHi">
-      Confirm
-    </v-btn>
-    <v-btn :disabled="!name" @click="warning"> Cancel </v-btn>
-  </div>
+      <v-btn :disabled="!name" class="mr-2" color="primary" @click="sayHi">
+        Confirm
+      </v-btn>
+      <v-btn :disabled="!name" @click="warning"> Cancel </v-btn>
+    </div>
+  </v-container>
 </template>
-
-<style scoped>
-.wrapper {
-  position: relative;
-  top: calc(50vh - 330px);
-  text-align: center;
-}
-</style>
