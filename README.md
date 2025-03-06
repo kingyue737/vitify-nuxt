@@ -16,7 +16,7 @@
 </p>
 
 <p align='center'>
-<b>Vuetify 3</b> + <b>Nuxt 3</b>, Opinionated Admin Starter Template<br><br>
+<b>Vuetify</b> + <b>Nuxt</b>, Opinionated Admin Starter Template<br><br>
 </p>
 
 <p align='center'>
@@ -25,7 +25,7 @@
 
 ## Features
 
-- 💚 [Nuxt 3](https://nuxt.com/) - SPA, ESR, File-based routing, components auto importing, modules, etc
+- 💚 [Nuxt](https://nuxt.com/) - SPA, ESR, File-based routing, components auto importing, modules, etc
 
 - 💥 SSR out of the box - powered by [Vuetify Nuxt module](https://github.com/vuetifyjs/nuxt-module)
 
@@ -63,7 +63,7 @@
 
 - [vitify-next](https://github.com/kingyue737/vitify-next) - Lightweight Vue 3 version without Nuxt
 
-- [vitify-electron](https://github.com/kingyue737/vitify-electron) - Vuetify 3 + Vite + Electron starter
+- [vitify-electron](https://github.com/kingyue737/vitify-electron) - Vuetify + Nuxt + Electron starter
 - [vitify-admin](https://github.com/kingyue737/vitify-admin) - Vue 2.7 with i18n, browser compatibility and mock server
 
 ## Pre-packed
