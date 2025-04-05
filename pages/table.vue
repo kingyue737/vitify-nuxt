@@ -146,6 +146,8 @@ const desserts = ref([
                 class="mr-2"
                 rounded="xl"
                 flat
+                icon-color
+                glow
                 variant="solo"
                 style="width: 250px"
               />
