@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DataTableHeaders } from '~/plugins/vuetify'
+import type { DataTableHeader } from 'vuetify'
 
 definePageMeta({
   icon: 'mdi-table',
@@ -25,7 +25,7 @@ function showDialogDelete(name: string) {
     })
 }
 
-const headers: DataTableHeaders = [
+const headers: DataTableHeader[] = [
   {
     title: 'Dessert (100g serving)',
     key: 'name',

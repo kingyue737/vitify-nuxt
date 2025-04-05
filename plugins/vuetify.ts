@@ -1,10 +1,7 @@
 import type { IconProps } from 'vuetify'
 import { Icon } from '#components'
-import type { VDataTable } from 'vuetify/components'
 import { useStorage } from '@vueuse/core'
 import { aliases } from 'vuetify/iconsets/mdi'
-
-export type DataTableHeaders = VDataTable['$props']['headers']
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('vuetify:configuration', ({ vuetifyOptions }) => {

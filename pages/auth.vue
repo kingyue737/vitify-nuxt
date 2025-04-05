@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DataTableHeaders } from '~/plugins/vuetify'
+import type { DataTableHeader } from 'vuetify'
 
 definePageMeta({
   icon: 'mdi-security',
@@ -8,7 +8,7 @@ definePageMeta({
   middleware: 'auth',
 })
 
-const headers: DataTableHeaders = [
+const headers: DataTableHeader[] = [
   { title: 'ID', key: 'id' },
   { title: 'Name', key: 'name' },
   { title: 'Title', key: 'title' },
