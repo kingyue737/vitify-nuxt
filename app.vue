@@ -39,9 +39,13 @@ useSeoMeta({
 .v-main {
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: var(--v-layout-top);
+  /* https://github.com/vuetifyjs/vuetify/issues/15202 */
+  margin-top: 64px;
+  margin-bottom: 32px;
+  height: calc(100vh - 64px - 32px);
+  /* margin-top: var(--v-layout-top);
   margin-bottom: var(--v-layout-bottom);
-  height: calc(100vh - var(--v-layout-top) - var(--v-layout-bottom));
+  height: calc(100vh - var(--v-layout-top) - var(--v-layout-bottom)); */
   overflow-y: auto;
   transition-property: padding;
 }
