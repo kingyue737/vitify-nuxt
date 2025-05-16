@@ -10,7 +10,9 @@ export default defineNuxtPlugin((nuxtApp) => {
       sets: {
         nuxtIcon: {
           component: ({ icon, tag, ...rest }: IconProps) =>
-            h(tag, rest, [h(Icon, { name: aliases[icon as string] ?? icon })]),
+            h(tag, rest, [
+              h(Icon, { name: (aliases[icon as string] as string) ?? icon }),
+            ]),
         },
       },
       aliases,
