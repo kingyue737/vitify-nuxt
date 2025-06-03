@@ -3,6 +3,9 @@ import { aliases } from 'vuetify/iconsets/mdi'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  future: {
+    compatibilityVersion: 4,
+  },
   modules: [
     '@pinia/nuxt',
     '@vueuse/nuxt',
@@ -34,13 +37,11 @@ export default defineNuxtConfig({
         (v as string).replace(/^mdi-/, 'mdi:'),
       ),
       scan: true,
-      // scan all components in the project and include icons
-      // scan: true,
     },
     customCollections: [
       {
         prefix: 'custom',
-        dir: './assets/icons',
+        dir: './app/assets/icons',
       },
     ],
   },
