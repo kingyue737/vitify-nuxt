@@ -6,12 +6,12 @@ const theme = useTheme()
 const primary = useStorage('theme-primary', '#1697f6')
 const color = computed({
   get() {
-    return theme.themes.value.light.colors.primary
+    return theme.themes.value.light!.colors.primary
   },
   set(val: string) {
     primary.value = val
-    theme.themes.value.light.colors.primary = val
-    theme.themes.value.dark.colors.primary = val
+    theme.themes.value.light!.colors.primary = val
+    theme.themes.value.dark!.colors.primary = val
   },
 })
 const colors = [

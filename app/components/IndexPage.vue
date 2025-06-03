@@ -3,8 +3,8 @@ const route = useRoute()
 
 const items = computed(() =>
   route.matched
-    .filter((v) => v.path === route.path)[0]
-    .children.filter((c) => c.path)
+    ?.filter((v) => v.path === route.path)[0]
+    ?.children.filter((c) => c.path)
     .toSorted(
       (a, b) => (a.meta?.drawerIndex ?? 99) - (b.meta?.drawerIndex ?? 98),
     )

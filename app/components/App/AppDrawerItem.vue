@@ -15,7 +15,7 @@ const title = toRef(() => item.meta?.title)
 const icon = toRef(() => item.meta?.icon)
 // @ts-expect-error unknown type miss match
 const to = computed<RouteRecordRaw>(() => ({
-  name: item.name || visibleChildren.value?.[0].name,
+  name: item.name || visibleChildren.value?.[0]?.name,
 }))
 </script>
 

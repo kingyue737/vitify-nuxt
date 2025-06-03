@@ -6,7 +6,7 @@ provide(
 )
 const route = useRoute()
 const title = computed(() => {
-  return route.meta?.title || route.matched[0].meta?.title || ''
+  return route.meta?.title || route.matched[0]?.meta?.title || ''
 })
 useHead({
   title,
