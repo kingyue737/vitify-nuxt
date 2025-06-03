@@ -1,7 +1,9 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { mountSuspended } from '@nuxt/test-utils/runtime'
 import DialogConfirm from '~/components/DialogConfirm.vue'
 import { VCard } from 'vuetify/components'
+
+vi.stubGlobal('visualViewport', new EventTarget())
 
 describe('component DialogConfirm.vue', () => {
   it('should not open', async () => {
