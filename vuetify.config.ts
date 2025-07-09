@@ -55,10 +55,6 @@ export default defineVuetifyConfiguration({
         border: true,
       },
     },
-    // https://github.com/vuetifyjs/vuetify/issues/19637
-    VTimePicker: {
-      ampmInTitle: true,
-    },
   },
   display: {
     mobileBreakpoint: 'sm',

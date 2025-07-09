@@ -15,10 +15,10 @@ const breadcrumbs = computed(() => {
 })
 const isDark = computed({
   get() {
-    return theme.global.name.value === 'dark' ? true : false
+    return theme.current.value.dark
   },
   set(v) {
-    theme.global.name.value = v ? 'dark' : 'light'
+    theme.change(v ? 'dark' : 'light')
   },
 })
 const { loggedIn, clear, user } = useUserSession()
