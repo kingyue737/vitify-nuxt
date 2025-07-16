@@ -7,15 +7,11 @@ await setup({
   browser: true,
 })
 describe('page /homepage', () => {
-  it(
-    'should render',
-    async () => {
-      const page = await createPage('/')
-      await page.getByText('Opinionated Starter Template').isVisible()
-      await page.close()
-    },
-    20000
-  )
+  it('should render', async () => {
+    const page = await createPage('/')
+    await page.getByText('Opinionated Starter Template').isVisible()
+    await page.close()
+  }, 20000)
 
   it('should show notification', async () => {
     const page = await createPage('/')

@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/nuxt-3-brightgreen.svg" alt="vue">
+    <img src="https://img.shields.io/badge/nuxt-4-brightgreen.svg" alt="nuxt">
   </a>
   <a href="https://github.com/vuetifyjs/vuetify">
     <img src="https://img.shields.io/badge/vuetify-3-blue.svg" alt="vuetify">

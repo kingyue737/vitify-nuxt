@@ -5,7 +5,7 @@ withDefaults(
     iconClass?: string
     color: string
     title: string
-    value: number | null
+    value?: number | null
     unit?: string
     formatter?: (v: number) => string
   }>(),
