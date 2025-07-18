@@ -17,6 +17,10 @@ const icon = toRef(() => item.meta?.icon)
 const to = computed<RouteRecordRaw>(() => ({
   name: item.name || visibleChildren.value?.[0]?.name,
 }))
+const route = useRoute()
+const isActive = computed(() => {
+  return route.path.startsWith(item.path)
+})
 </script>
 
 <template>
@@ -29,7 +33,7 @@ const to = computed<RouteRecordRaw>(() => ({
   />
   <v-list-group v-else-if="icon" :prepend-icon="icon" color="primary">
     <template #activator="{ props: vProps }">
-      <v-list-item :title="title" v-bind="vProps" />
+      <v-list-item :title="title" v-bind="vProps" :active="isActive" />
     </template>
     <AppDrawerItem
       v-for="child in visibleChildren"
