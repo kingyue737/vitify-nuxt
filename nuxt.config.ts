@@ -14,6 +14,15 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
   ],
+  hooks: {
+    'prepare:types': ({ tsConfig }) => {
+      tsConfig.include = [
+        ...tsConfig.include!,
+        '../*.config.*',
+        '../tests/**/*.ts',
+      ]
+    },
+  },
   css: ['~/assets/styles/index.css'],
   experimental: { typedPages: true },
   typescript: { shim: false, strict: true },
