@@ -20,7 +20,10 @@ export default defineNuxtConfig({
     shim: false,
     strict: true,
     tsConfig: {
-      include: ['../*.config.*', '../tests/**/*.ts'],
+      include: ['../tests/**/*.ts', './nuxt.node.d.ts'],
+    },
+    nodeTsConfig: {
+      include: ['../*.config.*'],
     },
   },
   vue: { propsDestructure: true },
