@@ -20,7 +20,8 @@ export default defineNuxtConfig({
     shim: false,
     strict: true,
     tsConfig: {
-      include: ['../tests/**/*.ts', './nuxt.node.d.ts'],
+      include: ['../tests/**/*.ts'],
+      compilerOptions: { types: ['vuetify-nuxt-module'] },
     },
     nodeTsConfig: {
       include: ['../*.config.*'],
