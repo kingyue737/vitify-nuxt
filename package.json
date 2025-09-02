@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -25,17 +25,17 @@
     "nuxt-echarts": "^1.0.0",
     "playwright-core": "^1.55.0",
     "prettier": "^3.6.2",
-    "vite": "^7.1.3",
+    "vite": "^7.1.4",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.0.6",
     "vuetify-nuxt-module": "^0.18.7"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.11.2",
-    "@vueuse/nuxt": "^13.7.0",
+    "@vueuse/nuxt": "^13.9.0",
     "echarts": "^6.0.0",
     "nuxt-auth-utils": "^0.5.23",
     "pinia": "^3.0.3",
-    "vuetify": "^3.9.5"
+    "vuetify": "^3.9.6"
   }
 }
