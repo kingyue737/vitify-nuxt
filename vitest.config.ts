@@ -1,11 +1,23 @@
-import { defineVitestConfig } from '@nuxt/test-utils/config'
+import { defineVitestProject } from '@nuxt/test-utils/config'
+import { defineConfig } from 'vitest/config'
 
-export default defineVitestConfig({
+export default defineConfig({
   test: {
-    environmentOptions: { nuxt: { dotenv: { fileName: '.env' } } },
-    onConsoleLog(log) {
-      if (log.includes('Generated an empty chunk')) return false
-      if (log.includes('<Suspense> is an experimental feature')) return false
-    },
+    projects: [
+      {
+        test: {
+          name: 'unit',
+          include: ['test/{e2e,unit}/*.{test,spec}.ts'],
+          environment: 'node',
+        },
+      },
+      await defineVitestProject({
+        test: {
+          name: 'nuxt',
+          include: ['test/nuxt/*.{test,spec}.ts'],
+          environment: 'nuxt',
+        },
+      }),
+    ],
   },
 })
