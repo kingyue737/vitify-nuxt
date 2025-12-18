@@ -96,9 +96,8 @@ drawerState.value = lgAndUp.value && width.value !== 1280
         height: 1em !important;
         width: 1em !important;
       }
-      .v-list-group {
-        --list-indent-size: 0px;
-        --prepend-width: 0px;
+      .v-list-group__items .v-list-item {
+        padding-inline-start: 8px !important;
       }
     }
   }
@@ -123,10 +122,10 @@ drawerState.value = lgAndUp.value && width.value !== 1280
     height: 1.2em !important;
     width: 1.2em !important;
     transition: all 0.2s;
-    margin-right: -10px;
+    margin-right: -4px;
   }
-  .v-list-group {
-    --prepend-width: 10px;
+  .v-list-group__items {
+    --v-list-indent: 28px;
   }
   .v-list-item {
     transition: all 0.2s;
