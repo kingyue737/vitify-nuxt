@@ -21,10 +21,6 @@ export default defineNuxtConfig({
     strict: true,
     tsConfig: {
       include: ['../test/**/*.ts'],
-      compilerOptions: { types: ['vuetify-nuxt-module'] },
-    },
-    nodeTsConfig: {
-      include: ['../*.config.*'],
     },
   },
   vue: { propsDestructure: true },
