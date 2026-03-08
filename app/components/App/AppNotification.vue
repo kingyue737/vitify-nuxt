@@ -102,11 +102,11 @@ function toggleAll() {
       overflow-y: auto;
       pointer-events: auto;
       .notification-item-wrapper {
-        transition: none !important;
+        transition: none;
         .notification-item {
           margin-bottom: 0;
           border-radius: 0;
-          border-top: 1px solid #5656563d !important;
+          border-top: 1px solid #5656563d;
         }
       }
     }

@@ -76,7 +76,7 @@ drawerState.value = lgAndUp.value && width.value !== 1280
 .v-navigation-drawer {
   transition-property:
     box-shadow, transform, visibility, width, height, left, right, top, bottom,
-    border-radius !important;
+    border-radius;
   overflow: hidden;
   &.v-navigation-drawer--rail {
     border-top-right-radius: 0px;
@@ -93,11 +93,11 @@ drawerState.value = lgAndUp.value && width.value !== 1280
         transform: translateX(-160px);
       }
       .drawer-header-icon {
-        height: 1em !important;
-        width: 1em !important;
+        height: 1em;
+        width: 1em;
       }
       .v-list-group__items .v-list-item {
-        padding-inline-start: 8px !important;
+        padding-inline-start: 8px;
       }
     }
   }
@@ -118,9 +118,9 @@ drawerState.value = lgAndUp.value && width.value !== 1280
     min-height: 30px;
   }
   .drawer-header-icon {
-    opacity: 1 !important;
-    height: 1.2em !important;
-    width: 1.2em !important;
+    opacity: 1;
+    height: 1.2em;
+    width: 1.2em;
     transition: all 0.2s;
     margin-right: -4px;
   }

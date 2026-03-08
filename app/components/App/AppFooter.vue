@@ -11,7 +11,7 @@
 </template>
 <style>
 .v-footer {
-  padding: 0px 10px !important;
+  padding: 0px 10px;
   > .v-btn--icon {
     .v-icon {
       height: 1.25em;
