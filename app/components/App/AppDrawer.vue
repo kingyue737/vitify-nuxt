@@ -37,7 +37,7 @@ drawerState.value = lgAndUp.value && width.value !== 1280
             />
           </template>
           <v-list-item-title
-            class="text-h5 font-weight-bold"
+            class="text-headline-small font-weight-bold"
             style="line-height: 2rem"
           >
             Vitify <span class="text-primary">Admin</span>
@@ -51,7 +51,7 @@ drawerState.value = lgAndUp.value && width.value !== 1280
     <v-spacer />
     <template #append>
       <v-list-item class="drawer-footer px-0 d-flex flex-column justify-center">
-        <div class="text-caption pt-6 pt-md-0 text-center text-no-wrap">
+        <div class="text-body-small pt-6 pt-md-0 text-center text-no-wrap">
           &copy; Copyright 2023
           <a
             href="https://github.com/kingyue737"
