@@ -110,7 +110,7 @@ drawerState.value = lgAndUp.value && width.value !== 1280
       }
     }
     &:hover {
-      overflow-y: overlay;
+      overflow-y: auto;
     }
   }
   .drawer-footer {

@@ -99,7 +99,7 @@ function toggleAll() {
     overflow: hidden;
     max-height: calc(100vh - 200px);
     .notification-box {
-      overflow-y: overlay;
+      overflow-y: auto;
       pointer-events: auto;
       .notification-item-wrapper {
         transition: none !important;
