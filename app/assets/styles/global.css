@@ -1,8 +1,5 @@
-html {
-  overflow-y: auto;
-  &.dark {
-    color-scheme: dark;
-  }
+html.dark {
+  color-scheme: dark;
 }
 
 .v-card--variant-elevated:not(.v-card--flat) {
@@ -14,22 +11,18 @@ html {
   &.v-btn--icon {
     color: rgba(0, 0, 0, 0.54);
   }
-  --v-border-opacity: 0.09 !important;
-  --v-theme-background: 243, 243, 243 !important;
+  --v-border-opacity: 0.09;
+  --v-theme-background: 243, 243, 243;
 }
 
 .v-app-bar,
 .v-navigation-drawer,
 .v-footer {
-  background-color: rgb(var(--v-theme-background)) !important;
+  background-color: rgb(var(--v-theme-background));
 }
 
 .v-overlay__content > .v-card {
-  overflow-y: overlay !important;
-}
-
-.v-btn {
-  text-transform: initial !important;
+  overflow-y: auto;
 }
 
 .v-data-table-footer {
@@ -41,11 +34,11 @@ html {
 }
 
 .v-tab {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 .v-list-item-title {
-  text-overflow: unset !important;
+  text-overflow: unset;
 }
 
 .v-breadcrumbs-divider {

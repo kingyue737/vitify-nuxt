@@ -36,6 +36,6 @@
     "echarts": "^6.0.0",
     "nuxt-auth-utils": "^0.5.29",
     "pinia": "^3.0.4",
-    "vuetify": "^3.12.1"
+    "vuetify": "^4.0.1"
   }
 }

@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/nuxt-4-brightgreen.svg" alt="nuxt">
   </a>
   <a href="https://github.com/vuetifyjs/vuetify">
-    <img src="https://img.shields.io/badge/vuetify-3-blue.svg" alt="vuetify">
+    <img src="https://img.shields.io/badge/vuetify-4-blue.svg" alt="vuetify">
   </a>
   <a href="https://github.com/kingyue737/vitify-admin/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">

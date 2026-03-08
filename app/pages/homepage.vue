@@ -14,10 +14,7 @@ definePageMeta({
 </script>
 
 <template>
-  <v-container
-    fluid
-    class="d-flex align-items-center justify-center fill-height"
-  >
+  <v-container fluid class="d-flex align-center justify-center fill-height">
     <div class="text-center">
       <v-icon
         icon="custom:vitify-nuxt"
