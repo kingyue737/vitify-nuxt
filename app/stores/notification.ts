@@ -40,14 +40,12 @@ export const Notify = {
   warning: (text: string) =>
     useNotificationStore().addNotification(text, 'warning'),
   error: (val: unknown) => {
-    let text = ''
-    if (typeof val === 'string') {
-      text = val
-    } else if (val instanceof Error) {
-      text = val.message
-    } else {
-      text = JSON.stringify(val)
-    }
+    const text =
+      typeof val === 'string'
+        ? val
+        : val instanceof Error
+          ? val.message
+          : JSON.stringify(val)
     useNotificationStore().addNotification(text, 'error')
   },
 }
