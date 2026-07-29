@@ -16,8 +16,8 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
     "@nuxt/eslint": "^1.16.0",
-    "@nuxt/icon": "^2.3.1",
-    "@nuxt/test-utils": "^4.0.3",
+    "@nuxt/icon": "^2.4.1",
+    "@nuxt/test-utils": "^4.1.0",
     "@vue/test-utils": "^2.4.11",
     "eslint": "^10.8.0",
     "happy-dom": "^20.11.1",
