@@ -33,6 +33,7 @@ export default defineNuxtConfig({
         prefersColorSchemeOptions: {},
         reloadOnFirstRequest: true,
       },
+      prefixComposables: ['useLayout'],
     },
   },
   icon: {
@@ -76,5 +77,5 @@ export default defineNuxtConfig({
       password: '',
     },
   },
-  compatibilityDate: '2024-08-05',
+  compatibilityDate: '2026-07-26',
 })
