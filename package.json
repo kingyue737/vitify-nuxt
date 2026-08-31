@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@11.22.0",
+  "packageManager": "pnpm@11.24.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -o",
@@ -16,11 +16,11 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
     "@nuxt/eslint": "^1.17.0",
-    "@nuxt/icon": "^2.5.0",
-    "@nuxt/test-utils": "^4.1.0",
-    "@vue/test-utils": "^2.4.11",
-    "eslint": "^10.9.0",
-    "happy-dom": "^20.11.6",
+    "@nuxt/icon": "^2.5.1",
+    "@nuxt/test-utils": "^4.2.0",
+    "@vue/test-utils": "^2.5.0",
+    "eslint": "^10.9.1",
+    "happy-dom": "^20.12.0",
     "nuxt": "^4.5.2",
     "nuxt-echarts": "^1.0.1",
     "playwright-core": "^1.62.1",
@@ -36,6 +36,6 @@
     "echarts": "^6.1.0",
     "nuxt-auth-utils": "^0.5.30",
     "pinia": "^4.0.3",
-    "vuetify": "^4.1.11"
+    "vuetify": "^4.1.12"
   }
 }
