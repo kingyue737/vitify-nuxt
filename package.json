@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^1.0.2",
-    "@vueuse/nuxt": "^14.4.0",
+    "@vueuse/nuxt": "^15.0.0",
     "echarts": "^6.1.0",
     "nuxt-auth-utils": "^0.5.30",
     "pinia": "^4.0.3",
