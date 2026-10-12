@@ -1,13 +1,16 @@
 import { fileURLToPath } from 'node:url'
-import { createPage, setup } from '@nuxt/test-utils/e2e'
-import { describe, it } from 'vitest'
+import { createPage, fetch, setup } from '@nuxt/test-utils/e2e'
+import { describe, expect, it } from 'vitest'
 
 await setup({
-  rootDir: fileURLToPath(new URL('../', import.meta.url)),
+  rootDir: fileURLToPath(new URL('../../', import.meta.url)),
   browser: true,
+  env: { NUXT_SESSION_PASSWORD: 'test-only-session-password-32-chars' },
 })
 describe('page /homepage', () => {
   it('should render', async () => {
+    // Report SSR failures before waiting for browser hydration.
+    expect((await fetch('/')).status).toBe(200)
     const page = await createPage('/')
     await page.getByText('Opinionated Starter Template').isVisible()
     await page.close()
