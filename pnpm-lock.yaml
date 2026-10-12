@@ -204,8 +204,8 @@ importers:
         specifier: ^10.12.0
         version: 10.12.0(jiti@2.7.0)(supports-color@10.2.2)
       h3:
-        specifier: ^1.15.11
-        version: 1.15.11
+        specifier: ^2.0.2
+        version: 2.0.2(crossws@0.4.15(srvx@1.0.5))
       happy-dom:
         specifier: ^20.14.6
         version: 20.14.6
