@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 await setup({
   rootDir: fileURLToPath(new URL('../../', import.meta.url)),
   browser: true,
-  env: { NUXT_SESSION_PASSWORD: 'test-only-session-password-32-chars' },
+  env: { NUXT_APP_SECRET: 'test-only-app-secret-at-least-32-chars' },
 })
 describe('page /homepage', () => {
   it('should render', async () => {

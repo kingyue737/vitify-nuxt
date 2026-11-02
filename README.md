@@ -125,13 +125,13 @@ NUXT_OAUTH_GITHUB_CLIENT_ID="my-github-oauth-app-id"
 NUXT_OAUTH_GITHUB_CLIENT_SECRET="my-github-oauth-app-secret"
 ```
 
-To create sealed sessions, you also need to add `NUXT_SESSION_SECRET` in the `.env` with at least 32 characters:
+To create sealed sessions, you also need to add `NUXT_APP_SECRET` in the `.env` with at least 32 characters:
 
 ```bash
-NUXT_SESSION_SECRET=your-super-long-secret-for-session-encryption
+NUXT_APP_SECRET=your-super-long-secret-for-session-encryption
 ```
 
-Nuxt Auth Utils generates one for you when running Nuxt in development the first time if no `NUXT_SESSION_PASSWORD` is set.
+Nuxt generates one for you when running Nuxt in development the first time if no `NUXT_APP_SECRET` is set. You must set it in production.
 
 ### Development
 
