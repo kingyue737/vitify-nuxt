@@ -68,13 +68,10 @@ export default defineNuxtConfig({
     build: { sourcemap: false },
   },
   runtimeConfig: {
+    appSecret: '',
     github: {
       clientId: '',
       clientSecret: '',
-    },
-    session: {
-      name: 'nuxt-session',
-      password: '',
     },
   },
   compatibilityDate: '2026-07-26',
