@@ -16,9 +16,9 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
     "@nuxt/eslint": "^1.17.0",
-    "@nuxt/icon": "^2.6.2",
+    "@nuxt/icon": "^2.6.3",
     "@nuxt/test-utils": "^4.4.0",
-    "@vue/test-utils": "^2.5.1",
+    "@vue/test-utils": "^2.6.0",
     "eslint": "^10.15.0",
     "h3": "^1.15.11",
     "happy-dom": "^21.0.4",
@@ -27,7 +27,7 @@
     "playwright-core": "^1.65.1",
     "prettier": "^3.10.1",
     "vite": "^8.3.8",
-    "vitest": "^5.1.0",
+    "vitest": "^5.1.1",
     "vue-tsc": "^3.3.14",
     "vuetify-nuxt-module": "^1.0.0-rc.6"
   },
@@ -37,6 +37,6 @@
     "echarts": "^6.1.0",
     "nuxt-auth-utils": "^0.6.2",
     "pinia": "^4.1.0",
-    "vuetify": "^4.3.3"
+    "vuetify": "^4.3.4"
   }
 }
