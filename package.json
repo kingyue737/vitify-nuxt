@@ -20,7 +20,7 @@
     "@nuxt/test-utils": "^4.4.0",
     "@vue/test-utils": "^2.6.0",
     "eslint": "^10.15.0",
-    "h3": "^1.15.11",
+    "h3": "^2.0.8",
     "happy-dom": "^21.0.4",
     "nuxt": "^4.7.0",
     "nuxt-echarts": "^1.1.0",
