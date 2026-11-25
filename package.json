@@ -22,7 +22,7 @@
     "eslint": "^10.15.0",
     "h3": "^1.15.11",
     "happy-dom": "^21.0.4",
-    "nuxt": "^4.6.4",
+    "nuxt": "^4.7.0",
     "nuxt-echarts": "^1.1.0",
     "playwright-core": "^1.65.1",
     "prettier": "^3.10.1",
